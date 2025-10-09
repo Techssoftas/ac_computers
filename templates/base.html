@@ -1,0 +1,365 @@
+<!Doctype html>
+{% load static %}
+<html class="no-js" lang="zxx">
+    
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Akash Computers</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" type="image/x-icon" href="{% static 'img/favicon.png' %}">
+        <!-- Place favicon.ico in the root directory -->
+
+		<!-- CSS here -->
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+        <link rel="stylesheet" href="{% static 'css/fontawesome-all.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/odometer.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/nice-select.css' %}">
+        <link rel="stylesheet" href="{% static 'css/jquery.rprogessbar.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/meanmenu.css' %}">
+        <link rel="stylesheet" href="{% static 'css/swipper.css' %}">
+        <link rel="stylesheet" href="{% static 'css/animated-circle.css' %}">
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    </head>
+     
+    <body>
+        <!-- sidebar-information-area-start -->
+        <div class="sidebar-info side-info">
+            <div class="sidebar-logo-wrapper mb-25">
+                <div class="row align-items-center">
+                    <div class="col-xl-6 col-8">
+                        <div class="sidebar-logo">
+                            <a href="index.html"><img src="{% static 'img/logo/logo.png' %}" alt="logo-img"></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-4">
+                        <div class="sidebar-close-wrapper text-end">
+                            <button class="sidebar-close side-info-close"><i class="fal fa-times"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-menu-wrapper fix">
+                <div class="mobile-menu"></div>
+            </div>
+
+            <div class="sidebar-contact-wrapper mt-40">
+                <div class="sidebar-contact mb-40">
+                    <h4 class="sidebar-contact-title">Contact Info</h4>
+                    <span class="sidebar-address"><i class="fal fa-map-marker-alt"></i><span>4929 Thorn Street Crow heart, WY 82512</span> </span>
+                    <a href="tel:+1(251)410-1010"><i class="fal fa-phone"></i><span>+1 (251) 410-1010</span></a>
+                    <a href="mailto:example@gmail.com" class="theme-3"><i class="fal fa-envelope"></i><span><span>example@gmail.com</span></span></a>   
+                </div>
+
+                <div class="sidebar-social mt-40 mb-30">
+                    <a href="#" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" target="_blank" class="youtube"><i class="fab fa-dribbble"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas-overlay"></div>
+        <!-- sidebar-information-area-end -->
+
+        <!-- search start area -->
+        <div class="ba-search-popup">
+            <div class="ba-color-layer"></div>
+            <div class="ba-search-popup-inner">
+            <form action="#">
+                <input type="text" placeholder="Search here..." name="search" id="search-input">
+                <button type="submit"><i class="fal fa-search"></i></button>
+            </form>
+            </div>
+        </div>
+        <!-- search start end -->
+
+        <!-- header area start -->
+        <header>
+            <div class="header-area">
+                <div class="header-topbar d-none d-md-block">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-8">
+                                <div class="header-topbar-info">
+                                    <p><i class="fal fa-map-marker-alt"></i>300 Pennsylvania Ave NW, Washington, DC 20006, USA</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-4">
+                                <div class="header-topbar-social">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-middle">
+                    <div class="container">
+                        <div class="middle-wrap">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img class="logo-1" src="{% static 'img/logo/logo.png' %}" alt="Image Not Found">
+                                </a>
+                            </div>
+                            <div class="middle-info d-none d-lg-flex">
+                                <div class="single-item">
+                                    <div class="icon">
+                                        <i class="fal fa-home"></i>
+                                    </div>
+                                    <div class="info">
+                                        <span>Kalifornia, USA</span>
+                                        <a class="info-content" href="tel:+9812689856 ">+9812689856</a>
+                                    </div>
+                                </div>
+                                <div class="single-item">
+                                    <div class="icon">
+                                        <i class="fal fa-clock"></i>
+                                    </div>
+                                    <div class="info">
+                                        <span>Monday to Friday</span>
+                                        <span class="info-content">9:00am - 6:00pm</span>
+                                    </div>
+                                </div>
+                                <div class="single-item">
+                                    <div class="icon">
+                                        <i class="fal fa-envelope"></i>
+                                    </div>
+                                    <div class="info">
+                                        <span>Get in Touch</span>
+                                        <a class="info-content" href="mailto:example@mail.com">example@gmail.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-bar d-lg-none">
+                                <div class="navbar-sign side-toggle">
+                                    <span class="menu-line-1"></span>
+                                    <span class="menu-line-2"></span>
+                                    <span class="menu-line-3"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-menu d-none d-lg-block">
+                    <div class="container">
+                        <div class="menu-wrap">
+                            <nav class="main-menu mobile-menu" id="mobile-menu">
+                                <ul>
+                                    <li class="menu-has-child">
+                                        <a href="index.html">Home</a>
+                                        <ul class="submenu">
+                                            <li><a href="index.html">Home</a></li>
+                                            <li><a href="index-2.html">Home 2</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li class="menu-has-child">
+                                        <a href="service.html">Services</a>
+                                        <ul class="submenu">
+                                            <li><a href="service.html">Service</a></li>
+                                            <li><a href="service-details.html">Service Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-has-child">
+                                        <a href="#">Pages</a>
+                                        <ul class="submenu">
+                                            <li><a href="team.html">Team</a></li>
+                                            <li><a href="team-details.html">Team Details</a></li>
+                                            <li><a href="portfolio.html">Portfolio</a></li>
+                                            <li><a href="portfolio-details.html">Portfolio Details</a></li>
+                                            <li><a href="checkout.html">Checkout</a></li>
+                                            <li><a href="cart.html">Cart</a></li>
+                                            <li><a href="404.html">404</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-has-child">
+                                        <a href="shop.html">Shop</a>
+                                        <ul class="submenu">
+                                            <li><a href="shop.html">Shop</a></li>
+                                            <li><a href="shop-details.html">Shop Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-has-child">
+                                        <a href="blog.html">Blog</a>
+                                        <ul class="submenu">
+                                            <li><a href="blog.html">Blog</a></li>
+                                            <li><a href="blog-details.html">Blog Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </nav>
+                            <div class="menu-right">
+                                <a href="contact.html" class="theme-btn header-btn">Get In Touch</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header area end -->
+        {% block content %}
+        {% endblock content %}
+        <!-- footer area start -->
+        <footer class="footer-area">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-4 col-lg-12">
+                            <div class="footer-left wow fadeInUp" data-wow-delay="0.3s">
+                                <div class="social">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-behance"></i></a>
+                                </div>
+                                <div class="inner-left">
+                                    <div class="footer-content">
+                                        <div class="footer-logo">
+                                            <a href="index.html"><img src="{% static 'img/logo/logo-2.png' %}" alt="Image Not Found"></a>
+                                        </div>
+                                        <p>Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Etiam ultri cies nisi.</p>
+                                    </div>
+                                    <div class="footer-contact">
+                                        <div class="footer-contact-item address">
+                                            <div class="address-icon contact-icon">
+                                                <i class="fal fa-map-signs"></i>
+                                            </div>
+                                            <div class="address-info contact-info">
+                                                <p>Manufactory, Newyork, USA.</p>
+                                            </div>
+                                        </div>
+                                        <div class="footer-contact-item phone">
+                                            <div class="phone-icon contact-icon">
+                                                <i class="fal fa-phone-alt"></i>
+                                            </div>
+                                            <div class="phone-info contact-info">
+                                                <a href="tel:+00-123-456-7891">+00-123-456-7891</a>
+                                            </div>
+                                        </div>
+                                        <div class="footer-contact-item mail">
+                                            <div class="mail-icon contact-icon">
+                                                <i class="fal fa-envelope"></i>
+                                            </div>
+                                            <div class="mail-info contact-info">
+                                                <a href="mailto:info@mail.com">info@mail.com</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-lg-7 col-md-7">
+                            <div class="footer-combine mr-30 pt-85 pb-90 ml-60 wow fadeInUp" data-wow-delay="0.5s">
+                                <div class="footer-menu-wrap">
+                                    <div class="footer-widget">
+                                        <h3 class="footer-widget-title">Company</h3>
+                                        <div class="footer-widget-menu">
+                                            <ul>
+                                                <li><a href="about.html">About</a></li>
+                                                <li><a href="blog.html">Blog</a></li>
+                                                <li><a href="service.html">Service</a></li>
+                                                <li><a href="about.html">Privacy Policy</a></li>
+                                                <li><a href="about.html">Projects </a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer-time-wrap">
+                                    <div class="footer-widget">
+                                        <h3 class="footer-widget-title">Working Hours</h3>
+                                        <div class="footer-widget-time">
+                                            <table class="working-hours">
+                                                <tbody>
+                                                    <tr>
+                                                        <th>Monday</th>
+                                                        <td>9am - 5pm</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Tuesday</th>
+                                                        <td>9am - 1pm</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Wendsday</th>
+                                                        <td>9am - 1pm</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Thursday</th>
+                                                        <td>9am - 1pm</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Friday</th>
+                                                        <td>Closed</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Saturday</th>
+                                                        <td>9am - 1pm</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Sunday</th>
+                                                        <td>9am - 1pm</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-5 col-md-5">
+                            <div class="footer-widget pt-85 pb-90 wow fadeInUp" data-wow-delay="0.7s">
+                                <h3 class="footer-widget-title">Newsletter</h3>
+                                <div class="footer-widget-newsletter">
+                                    <div class="newsletter-form">
+                                        <p>Subscribe to our nesletter, Your mail address is very confidential.</p> 
+                                        <form action="#">
+                                            <input type="email" name="email" placeholder="Email address">
+                                            <button type="submit" class="theme-btn subscribe-btn">Subscribe Us</button>
+                                        </form> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="copyright-text wow fadeInUp" data-wow-delay="0.5s">
+                                <p>Copyright © 2023 CCTV HTML Template by <a href="#">ThemePhi</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer area end -->
+
+		<!-- JS here -->
+        <script src="{% static 'js/jquery.min.js' %}"></script>
+        <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+        <script src="{% static 'js/swipper-bundle.min.js' %}"></script>
+        <script src="{% static 'js/jquery.meanmenu.min.js' %}"></script>
+        <script src="{% static 'js/wow.min.js' %}"></script>
+        <script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+        <script src="{% static 'js/jQuery.rProgressbar.min.js' %}"></script>
+        <script src="{% static 'js/jquery.nice-select.min.js' %}"></script>
+        <script src="{% static 'js/jquery.scrollUp.min.js' %}"></script>
+        <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+        <script src="{% static 'js/odometer.min.js' %}"></script>
+        <script src="{% static 'js/appear.min.js' %}"></script>
+        <script src="{% static 'js/aminated-circle.js' %}"></script>
+        <script src="{% static 'js/main.js' %}"></script>
+    </body>
+
+</html>
