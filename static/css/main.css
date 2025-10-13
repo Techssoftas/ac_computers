@@ -1976,7 +1976,7 @@ input:focus::placeholder, textarea:focus::placeholder {
 .main-menu ul li a {
   font-size: 16px;
   color: #fff;
-  padding: 25px 10px;
+  padding: 25px 5px;
   display: block;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -8772,10 +8772,9 @@ svg.web-design circle {
     margin-left: 30px;
   }
 }
-
 .footer-combine {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .footer-combine.mr-30 {

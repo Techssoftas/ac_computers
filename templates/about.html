@@ -5,14 +5,14 @@
 
   <main>
             <!-- breadcrumb area start -->
-            <section class="bn-slider breadcrumb-height bn-breadcrumb align-items-center d-flex" data-background="img/bg/breadcrumb.html">
+            <section class="bn-slider breadcrumb-height bn-breadcrumb align-items-center d-flex" data-background="{% static 'img/bg/breadcrumb.jpg'%}">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
                             <div class="bn-breadcrumb-wrap text-center">
                                 <h2 class="bn-breadcrumb-title wow fadeInUp" data-wow-delay="0.1s">About</h2>
                                 <div class="bn-breadcrumb-list wow fadeInUp" data-wow-delay="0.3s">
-                                    <a href="index.html">Home</a>
+                                    <a href="{% url 'index' %}">Home</a>
                                     <span>About</span>
                                 </div>
                             </div>
@@ -24,7 +24,7 @@
 
             <!-- about area start -->
             <section>
-                <div class="about-area pt-110 pb-80 ">
+                <div class="about-area pt-110 pb-80 " style="background-color: #d9e9e9;">
                     <div class="container">
                         <div class="row">
                             <div class="col-12">
@@ -208,7 +208,7 @@
                                                             </div>
                                                             <div class="col-xl-6">
                                                                 <div class="feature-item-img w_img mb-30">
-                                                                    <img src="{% static 'img/feature/feature-1.html' %}" alt="Image Not Found">
+                                                                    <img src="{% static 'img/feature/feature-1.jpg' %}" alt="Image Not Found">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -267,7 +267,7 @@
                                                             </div>
                                                             <div class="col-xl-6">
                                                                 <div class="feature-item-img w_img mb-30">
-                                                                    <img src="{% static 'img/feature/feature-1.html' %}" alt="Image Not Found">
+                                                                    <img src="{% static 'img/feature/feature-1.jpg' %}" alt="Image Not Found">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -326,7 +326,7 @@
                                                             </div>
                                                             <div class="col-xl-6">
                                                                 <div class="feature-item-img w_img mb-30">
-                                                                    <img src="{% static 'img/feature/feature-1.html' %}" alt="Image Not Found">
+                                                                    <img src="{% static 'img/feature/feature-1.jpg' %}" alt="Image Not Found">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -385,7 +385,7 @@
                                                             </div>
                                                             <div class="col-xl-6">
                                                                 <div class="feature-item-img w_img mb-30">
-                                                                    <img src="{% static 'img/feature/feature-1.html' %}" alt="Image Not Found">
+                                                                    <img src="{% static 'img/feature/feature-1.jpg' %}" alt="Image Not Found">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -444,7 +444,7 @@
                                                             </div>
                                                             <div class="col-xl-6">
                                                                 <div class="feature-item-img w_img mb-30">
-                                                                    <img src="{% static 'img/feature/feature-1.html' %}" alt="Image Not Found">
+                                                                    <img src="{% static 'img/feature/feature-1.jpg' %}" alt="Image Not Found">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -503,7 +503,7 @@
                                                             </div>
                                                             <div class="col-xl-6">
                                                                 <div class="feature-item-img w_img mb-30">
-                                                                    <img src="{% static 'img/feature/feature-1.html' %}" alt="Image Not Found">
+                                                                    <img src="{% static 'img/feature/feature-1.jpg' %}" alt="Image Not Found">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -562,7 +562,7 @@
                                                             </div>
                                                             <div class="col-xl-6">
                                                                 <div class="feature-item-img w_img mb-30">
-                                                                    <img src="{% static 'img/feature/feature-1.html' %}" alt="Image Not Found">
+                                                                    <img src="{% static 'img/feature/feature-1.jpg' %}" alt="Image Not Found">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -617,122 +617,6 @@
             </section>
             <!-- feature area end -->
 
-            <!-- map area start -->
-            <div class="map-area pb-120">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="section-area text-center mb-35">
-                                <span class="section-subtitle mb-2 wow fadeInUp" data-wow-delay="0.1s">Work Area</span>
-                                <h2 class="section-title mb-15 wow fadeInUp" data-wow-delay="0.3s">We Work Around the World</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="map-wrap w_img p-relative wow fadeInUp" data-wow-delay="0.5s">
-                        <img src="{% static 'img/bg/map.html' %}" alt="Image Not Found">
-                        <div class="work-location">
-                            <div class="location-main-item">
-                                <div class="location-common location-1">
-                                    <div class="location-content p-relative">
-                                        <div class="location-inner">
-                                            <img src="{% static 'img/bg/dot-1-img.html' %}" alt="Image Not Found">
-                                            <ul class="location-contact">
-                                                <li>
-                                                    <i class="fal fa-phone"></i>
-                                                    <span><a href="tel:80913450924">809 134 509 24</a></span>
-                                                </li>
-                                                <li>
-                                                    <i class="fal fa-envelope"></i>
-                                                    <span><a href="mailto:example@email.com">example@email.com</a></span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="location-main-item">
-                                <div class="location-common location-2 active">
-                                    <div class="location-main-item">
-                                        <div class="location-content p-relative">
-                                            <div class="location-inner">
-                                                <img src="{% static 'img/bg/dot-1-img.html' %}" alt="Image Not Found">
-                                                <ul class="location-contact">
-                                                    <li>
-                                                        <i class="fal fa-phone"></i>
-                                                        <span><a href="tel:80913450924">809 134 509 24</a></span>
-                                                    </li>
-                                                    <li>
-                                                        <i class="fal fa-envelope"></i>
-                                                        <span><a href="mailto:example@email.com">example@email.com</a></span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="location-main-item">
-                            <div class="location-common location-3">
-                                <div class="location-content p-relative">
-                                    <div class="location-inner">
-                                        <img src="{% static 'img/bg/dot-1-img.html' %}" alt="Image Not Found">
-                                        <ul class="location-contact">
-                                            <li>
-                                                <i class="fal fa-phone"></i>
-                                                <span><a href="tel:80913450924">809 134 509 24</a></span>
-                                            </li>
-                                            <li>
-                                                <i class="fal fa-envelope"></i>
-                                                <span><a href="mailto:example@email.com">example@email.com</a></span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
-                            <div class="location-main-item">
-                            <div class="location-common location-4">
-                                <div class="location-content p-relative">
-                                    <div class="location-inner">
-                                        <img src="{% static 'img/bg/dot-1-img.html' %}" alt="Image Not Found">
-                                        <ul class="location-contact">
-                                            <li>
-                                                <i class="fal fa-phone"></i>
-                                                <span><a href="tel:80913450924">809 134 509 24</a></span>
-                                            </li>
-                                            <li>
-                                                <i class="fal fa-envelope"></i>
-                                                <span><a href="mailto:example@email.com">example@email.com</a></span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
-                            <div class="location-main-item">
-                            <div class="location-common location-5">
-                                <div class="location-content p-relative">
-                                    <div class="location-inner">
-                                        <img src="{% static 'img/bg/dot-1-img.html' %}" alt="Image Not Found">
-                                        <ul class="location-contact">
-                                            <li>
-                                                <i class="fal fa-phone"></i>
-                                                <span><a href="tel:80913450924">809 134 509 24</a></span>
-                                            </li>
-                                            <li>
-                                                <i class="fal fa-envelope"></i>
-                                                <span><a href="mailto:example@email.com">example@email.com</a></span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- map area end -->
 
         </main>
 

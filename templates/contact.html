@@ -3,4 +3,105 @@
 {% block title %}Contact - AC Computers{% endblock title %}
 {% block content %}
 
+<style>
+    .sndmsgbtn{
+    padding: 8px;
+    margin-top: 20px;
+    background-color:white ;
+    color: #006464;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    }
+  </style>
+     <main>
+
+            <!-- breadcrumb area start -->
+            <section class="bn-slider breadcrumb-height bn-breadcrumb align-items-center d-flex" data-background="{% static 'img/bg/breadcrumb.jpg'%}">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="bn-breadcrumb-wrap text-center">
+                                <h2 class="bn-breadcrumb-title wow fadeInUp" data-wow-delay="0.1s">Contact Us</h2>
+                                <div class="bn-breadcrumb-list wow fadeInUp" data-wow-delay="0.3s">
+                                    <a href="index.html">Home</a>
+                                    <span>Contact us</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- breadcrumb area end -->
+            <!-- contact area start -->
+            <section class="container">   
+              <div class="contact-area pt-50 pb-120">
+                    <div class="contact-info">
+              <div class="contact-card">
+               <span><i class="fa-solid fa-location-dot"></i></span>
+                <h2>Our Location</h2>
+                <p>Tamil Nadu</p>
+              </div>
+              <div class="contact-card">
+                <span><i class="fa-solid fa-envelope"></i></span>
+                <h2>Email us</h2>
+                <a style="color:white;text-decoration: none;" href="mailto:info@mail.com">info@mail.com</a>
+              </div>
+              <div class="contact-card">
+                <span><i class="fa-solid fa-phone-volume"></i></span>
+                <h2>Call us</h2>
+                <p>+00-123-456-7891</p>
+              </div>
+            </div>
+      
+            <div class="contact-details">
+              
+              <div class="get-in-touch-form">
+                <h2>GET IN TOUCH</h2>
+
+                <form id="contactForm">
+                  <div class="form-grid">
+                    <div class="form-field">
+                      <label for="fullname"> Name *</label>
+                      <input type="text" id="name" name="name" required />
+                    </div>
+
+                    <div class="form-field">
+                      <label for="email">Email Address *</label>
+                      <input type="email" id="email" name="email" required />
+                    </div>
+
+                    <div class="form-field">
+                      <label for="location">Location *</label>
+                      <input type="text" id="location" name="location" required />
+                    </div>
+
+                    <div class="form-field">
+                      <label for="phone">Phone number *</label>
+                      <input type="tel" id="phone" name="phone" required />
+                    </div>
+                  </div>
+
+                  <div class="form-field">
+                    <label for="message">Message here... *</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                  </div>
+                
+                <button type="submit" class="sndmsgbtn">
+                  <span>Send Message &nbsp;</span>
+                  <span style="width:40px;height:40px;text-align: center;background-color:black;padding-top: 8px;" ><i class="fa-solid fa-arrow-right" style="color: white;"></i></span></button>
+                </form>
+
+              </div>
+              <div class="contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12534009.839989005!2d74.29099442499998!3d10.909433299999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b002d60b1b3a0b1%3A0x3a8b0e6f4d91f94!2sTamil%20Nadu!5e0!3m2!1sen!2sin!4v1696942901234!5m2!1sen!2sin"></iframe>
+              </div>
+            </div>
+                </div>
+            </section>
+            <!-- contact area end -->
+     </main>
 {% endblock content %}
