@@ -34,7 +34,8 @@
                 <div class="row align-items-center">
                     <div class="col-xl-6 col-8">
                         <div class="sidebar-logo">
-                            <a href="index.html"><img src="{% static 'img/logo/logo.png' %}" alt="logo-img"></a>
+                            {% comment %} <a href="index.html"><img src="{% static 'img/logo/logo.png' %}" alt="logo-img"></a> {% endcomment %}
+                             <h5 style="color:#ea6b08;">Aakash Computers</h5>
                         </div>
                     </div>
                     <div class="col-xl-6 col-4">
@@ -108,7 +109,7 @@
                             <div class="logo">
                                 <a href="{% url 'index' %}">
                                     {% comment %} <img class="logo-1" src="{% static 'img/logo/logo.png' %}" alt="Image Not Found"> {% endcomment %}
-                                    <h5 style="color:white;">Aakash Computers</h5>
+                                    <h5 style="color:#ea6b08;">Aakash Computers</h5>
                                 </a>
                             </div>
                             <div class="middle-info d-none d-lg-flex">
@@ -165,22 +166,19 @@
                                             <li><a href="service.html">CCTV</a></li>
                                             <li><a href="service.html">Desktop</a></li>
                                             <li><a href="service.html">Laptop</a></li>
+                                            <li><a href="service.html">Home Appliances</a></li>
+                                            <li><a href="about.html">Automation</a></li>
+                                            <li><a href="about.html">Solar</a></li>
                                         </ul>
-                                    </li>
+                                    </li>   
                                     <li class="menu-has-child">
-                                        <a href="about.html">Home Appliances</a>
+                                        <a href="{% url 'services' %}">Services</a>
                                          <ul class="submenu">
-                                            <li><a href="service.html">Television</a></li>
-                                            <li><a href="service.html">Air Conditioner(AC)</a></li>
-                                            <li><a href="service.html">Washing Machine</a></li>
-                                            <li><a href="service.html">Refrigerator</a></li>
-                                            <li><a href="service.html">Microwave Oven</a></li>
+                                            <li><a href="service.html">CCTV Services</a></li>
+                                            <li><a href="service.html">Desktop Services</a></li>
+                                            <li><a href="service.html">Laptop Services</a></li>
+                                            <li><a href="service.html">UPS & Battery Services</a></li>
                                         </ul>
-                                    </li>
-                                      <li><a href="about.html">Automation</a></li>
-                                        <li><a href="about.html">Solar</a></li>
-                                    <li>
-                                        <a href="service.html">Services</a>
                                     </li>
                                     <li>
                                        <a href="{% url 'contact' %}">Contact</a>
