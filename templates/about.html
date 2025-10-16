@@ -30,7 +30,7 @@
                             <div class="col-12">
                                 <div class="section-area mb-40">
                                     <span class="section-subtitle mb-2 wow fadeInUp" data-wow-delay="0.1s">About Our Company</span>
-                                    <h2 class="section-title mb-15 wow fadeInUp" data-wow-delay="0.3s">We work with the most <br> successful companies.</h2>
+                                    <h2 class="section-title mb-15 wow fadeInUp" data-wow-delay="0.3s"> Your trusted partner for <br>quality and support.</h2>
                                 </div>
                             </div>
                         </div>
@@ -45,16 +45,16 @@
                                     <div class="about_posts">
                                         <div class="about_posts-item mb-30">
                                             <div class="about-media w_img wow fadeInLeft" data-wow-delay="0.5s">
-                                                <a href="about.html"><img src="{% static 'img/about/post_1.jpg' %}" alt="Image Not Found"></a>
+                                                <a href="{% url 'about' %}"><img src="{% static 'img/about/post_1.jpg' %}" alt="Image Not Found"></a>
                                             </div>
                                             <div class="about-content wow fadeInRight" data-wow-delay="0.5s">
-                                                <h4 class="about_content-title"><a href="about.html">
-                                                    Smarter Wireless Applications
+                                                <h4 class="about_content-title"><a href="{% url 'about' %}">
+                                                    Quality Electronics, Trusted Solutions
                                                 </a></h4>
                                                 <p class="about_content-text">
-                                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, mollitia!
+                                                    Our focus is on delivering durable electronics supported by professional and trusted service.
                                                 </p>
-                                                <a class="about_content-link" href="about.html">
+                                                <a class="about_content-link" href="{% url 'about' %}">
                                                     <span>Read More</span>
                                                     <i class="fal fa-long-arrow-right"></i>
                                                 </a>
@@ -62,16 +62,16 @@
                                         </div>
                                         <div class="about_posts-item">
                                             <div class="about-media w_img wow fadeInLeft" data-wow-delay="0.7s">
-                                                <a href="about.html"><img src="{% static 'img/about/post_2.jpg' %}" alt="Image Not Found"></a>
+                                                <a href="{% url 'about' %}"><img src="{% static 'img/about/post_2.jpg' %}" alt="Image Not Found"></a>
                                             </div>
                                             <div class="about-content wow fadeInRight" data-wow-delay="0.7s">
-                                                <h4 class="about_content-title"><a href="about.html">
-                                                    Private & Personal Security
+                                                <h4 class="about_content-title"><a href="{% url 'about' %}">
+                                                   Expert Care for Every Device
                                                 </a></h4>
                                                 <p class="about_content-text">
-                                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, mollitia!
+                                                      We provide professional repair and maintenance services to ensure every device performs reliably.
                                                 </p>
-                                                <a class="about_content-link" href="about.html">
+                                                <a class="about_content-link" href="{% url 'about' %}">
                                                     <span>Read More</span>
                                                     <i class="fal fa-long-arrow-right"></i>
                                                 </a>

@@ -1,0 +1,158 @@
+{% extends 'base.html'  %}
+{% load static %}
+{% block title %}About - AC Computers{% endblock title %}
+{% block content %}
+ <main>
+     <!-- team-testimonial-area -->
+            <div class="team-testimonial-area bg-light pt-110 pb-65">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="section-area text-center mb-45">
+                                {% comment %} <span class="section-subtitle mb-2 wow fadeInUp" data-wow-delay="0.1s">Our Products </span> {% endcomment %}
+                                <h5 class="section-title mb-15 wow fadeInUp" data-wow-delay="0.3s" style="color:#ea6b08">Our Products</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="team-content-wrapper mb-40">
+                                <div class="swiper-container team-active-2 pb-80">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="team-item wow fadeInUp" data-wow-delay="0.1s">
+                                                <div class="team-img w_img">
+                                                    <a href="{% url 'products' %}"><img src="{% static 'img/product/cctv2.jpg'%}" alt="Image Not Found"></a>
+                                                </div>
+                                                <div class="team-content">
+                                                    <span class="gear-icon"></span>
+                                                    <h5 class="team-content-title"><a href="{% url 'products' %}">CCTV Cameras</a></h5>
+                                                    <span class="team-content-subtitle">Surveillance</span>
+                                                    <div class="middle-content">
+                                                        <ul class="list">
+                                                            <li><i class="fa-solid fa-angles-right"></i>High-resolution surveillance</li>
+                                                            <li><i class="fa-solid fa-angles-right"></i>24/7 security monitoring</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="btn-box">
+                                                        <a class="read-more theme-btn" href="{% url 'products' %}">View Products <i class="fal fa-angle-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="team-item  wow fadeInUp" data-wow-delay="0.3s">
+                                                <div class="team-img w_img">
+                                                    <a href="{% url 'products' %}"><img src="{% static 'img/product/desktop1.jpg'%}" alt="Image Not Found"></a>
+                                                </div>
+                                                <div class="team-content">
+                                                    <span class="gear-icon"></span>
+                                                    <h5 class="team-content-title"><a href="{% url 'products' %}">Desktop</a></h5>
+                                                    <span class="team-content-subtitle">Performance</span>
+                                                    <div class="middle-content">
+                                                        <ul class="list" >
+                                                            <li><i class="fa-solid fa-angles-right"></i>Fast and reliable performance</li>
+                                                            <li><i class="fa-solid fa-angles-right"></i>Smooth multitasking</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="btn-box">
+                                                        <a class="read-more theme-btn" href="{% url 'products' %}">View Products <i class="fal fa-angle-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="team-item wow fadeInUp" data-wow-delay="0.5s">
+                                                <div class="team-img w_img">
+                                                    <a href="{% url 'products' %}"><img src="{% static 'img/product/laptop.jpg'%}" alt="Image Not Found"></a>
+                                                </div>
+                                                <div class="team-content">
+                                                    <span class="gear-icon"></span>
+                                                    <h5 class="team-content-title"><a href="{% url 'products' %}">Laptop</a></h5>
+                                                    <span class="team-content-subtitle">Mobility</span>
+                                                    <div class="middle-content">
+                                                        <ul class="list">
+                                                            <li><i class="fa-solid fa-angles-right"></i> Portable & high-performance</li>
+                                                            <li><i class="fa-solid fa-angles-right"></i>Long-lasting battery</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="btn-box">
+                                                        <a class="read-more theme-btn" href="{% url 'products' %}">View Products <i class="fal fa-angle-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="team-item wow fadeInUp" data-wow-delay="0.7s">
+                                                <div class="team-img w_img">
+                                                    <a href="{% url 'products' %}"><img src="{% static 'img/product/homeapp.jpg'%}" alt="Image Not Found"></a>
+                                                </div>
+                                                <div class="team-content">
+                                                    <span class="gear-icon"></span>
+                                                    <h5 class="team-content-title"><a href="{% url 'products' %}">Home Appliances</a></h5>
+                                                    <span class="team-content-subtitle">Comfort</span>
+                                                    <div class="middle-content">
+                                                        <ul class="list">
+                                                            <li><i class="fa-solid fa-angles-right"></i> Modern & energy-efficient</li>
+                                                            <li><i class="fa-solid fa-angles-right"></i> Durable & reliable</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="btn-box">
+                                                        <a class="read-more theme-btn" href="{% url 'products' %}">View Products <i class="fal fa-angle-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="team-item wow fadeInUp" data-wow-delay="0.7s">
+                                                <div class="team-img w_img">
+                                                    <a href="{% url 'products' %}"><img src="{% static 'img/product/solar.jpg'%}" alt="Image Not Found"></a>
+                                                </div>
+                                                <div class="team-content">
+                                                    <span class="gear-icon"></span>
+                                                    <h5 class="team-content-title"><a href="{% url 'products' %}">Solar Products</a></h5>
+                                                    <span class="team-content-subtitle">Sustainability</span>
+                                                    <div class="middle-content">
+                                                        <ul class="list">
+                                                            <li><i class="fa-solid fa-angles-right"></i>High-efficiency panels</li>
+                                                            <li><i class="fa-solid fa-angles-right"></i>Cost-effective solutions</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="btn-box">
+                                                        <a class="read-more theme-btn" href="{% url 'products' %}">View Products <i class="fal fa-angle-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="team-item wow fadeInUp" data-wow-delay="0.7s">
+                                                <div class="team-img w_img">
+                                                    <a href="{% url 'products' %}"><img src="{% static 'img/product/automation.jpg'%}" alt="Image Not Found"></a>
+                                                </div>
+                                                <div class="team-content">
+                                                    <span class="gear-icon"></span>
+                                                    <h5 class="team-content-title"><a href="{% url 'products' %}">Automation Products</a></h5>
+                                                    <span class="team-content-subtitle">Efficiency</span>
+                                                    <div class="middle-content">
+                                            
+                                                        <ul class="list">
+                                                            <li><i class="fa-solid fa-angles-right"></i> Smart control systems</li>
+                                                            <li><i class="fa-solid fa-angles-right"></i>Mobile app integration</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="btn-box">
+                                                        <a class="read-more theme-btn" href="{% url 'products' %}">View Products <i class="fal fa-angle-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- team-testimonial-area-end -->
+ </main>
+{% endblock content %}

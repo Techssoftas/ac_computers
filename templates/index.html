@@ -14,7 +14,7 @@
                                         <div class="banner-main">
                                             <div class="banner-control-item">
                                                 <div class="banner-content">
-                                                    <span class="banner-subtitle wow fadeInUp" data-wow-delay="0.1s">Welcome To Aakash Computers</span>
+                                                    <span class="banner-subtitle wow fadeInUp" data-wow-delay="0.1s">Welcome To Tecxtronics</span>
                                                     <h2 class="banner-title wow fadeInUp" data-wow-delay="0.3s">We bring your devices back to life.</h2>
                                                     <div class="banner-button mt-35 wow fadeInUp" data-wow-delay="0.5s">
                                                         <a class="about_content-link banner-btn" href="about.html">
@@ -29,7 +29,7 @@
                                         <div class="banner-main">
                                             <div class="banner-control-item">
                                                 <div class="banner-content">
-                                                    <span class="banner-subtitle wow fadeInUp" data-wow-delay="0.1s">Welcome To Aakash Computers</span>
+                                                    <span class="banner-subtitle wow fadeInUp" data-wow-delay="0.1s">Welcome To Tecxtronics</span>
                                                     <h2 class="banner-title wow fadeInUp" data-wow-delay="0.3s">Your digital life, back on track.</h2>
                                                     <div class="banner-button mt-35 wow fadeInUp" data-wow-delay="0.5s">
                                                         <a class="about_content-link banner-btn" href="about.html">
@@ -44,7 +44,7 @@
                                         <div class="banner-main">
                                             <div class="banner-control-item">
                                                 <div class="banner-content">
-                                                    <span class="banner-subtitle wow fadeInUp" data-wow-delay="0.1s">Welcome To Aakash Computers</span>
+                                                    <span class="banner-subtitle wow fadeInUp" data-wow-delay="0.1s">Welcome To Tecxtronics</span>
                                                     <h2 class="banner-title wow fadeInUp" data-wow-delay="0.3s">Smart solutions for every device.</h2>
                                                     <div class="banner-button mt-35 wow fadeInUp" data-wow-delay="0.5s">
                                                         <a class="about_content-link banner-btn" href="about.html">
@@ -159,97 +159,234 @@
             </section>
             <!-- about area end -->
 
-             <!-- product area start -->
+
+            <!-- team-testimonial-area -->
+            <div class="team-testimonial-area bg-light pt-110 pb-65">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="section-area text-center mb-45">
+                                <span class="section-subtitle mb-2 wow fadeInUp" data-wow-delay="0.1s">Our Products </span> 
+                                <h5 class="section-title mb-15 wow fadeInUp" data-wow-delay="0.3s" >Seamless Experience</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="team-content-wrapper mb-40">
+                                <div class="swiper-container team-active-2 pb-80">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="team-item wow fadeInUp" data-wow-delay="0.1s">
+                                                <div class="team-img w_img">
+                                                    <a href="{% url 'products' %}"><img src="{% static 'img/product/cctv2.jpg'%}" alt="Image Not Found"></a>
+                                                </div>
+                                                <div class="team-content">
+                                                    <span class="gear-icon"></span>
+                                                    <h5 class="team-content-title"><a href="{% url 'products' %}">CCTV Cameras</a></h5>
+                                                    <span class="team-content-subtitle">Surveillance</span>
+                                                    <div class="middle-content">
+                                                        <ul class="list">
+                                                            <li><i class="fa-solid fa-angles-right"></i>High-resolution surveillance</li>
+                                                            <li><i class="fa-solid fa-angles-right"></i>24/7 security monitoring</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="btn-box">
+                                                        <a class="read-more theme-btn" href="{% url 'products' %}">View Products <i class="fal fa-angle-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="team-item  wow fadeInUp" data-wow-delay="0.3s">
+                                                <div class="team-img w_img">
+                                                    <a href="{% url 'products' %}"><img src="{% static 'img/product/desktop1.jpg'%}" alt="Image Not Found"></a>
+                                                </div>
+                                                <div class="team-content">
+                                                    <span class="gear-icon"></span>
+                                                    <h5 class="team-content-title"><a href="{% url 'products' %}">Desktop</a></h5>
+                                                    <span class="team-content-subtitle">Performance</span>
+                                                    <div class="middle-content">
+                                                        <ul class="list" >
+                                                            <li><i class="fa-solid fa-angles-right"></i>Fast and reliable performance</li>
+                                                            <li><i class="fa-solid fa-angles-right"></i>Smooth multitasking</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="btn-box">
+                                                        <a class="read-more theme-btn" href="{% url 'products' %}">View Products <i class="fal fa-angle-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="team-item wow fadeInUp" data-wow-delay="0.5s">
+                                                <div class="team-img w_img">
+                                                    <a href="{% url 'products' %}"><img src="{% static 'img/product/laptop.jpg'%}" alt="Image Not Found"></a>
+                                                </div>
+                                                <div class="team-content">
+                                                    <span class="gear-icon"></span>
+                                                    <h5 class="team-content-title"><a href="{% url 'products' %}">Laptop</a></h5>
+                                                    <span class="team-content-subtitle">Mobility</span>
+                                                    <div class="middle-content">
+                                                        <ul class="list">
+                                                            <li><i class="fa-solid fa-angles-right"></i> Portable & high-performance</li>
+                                                            <li><i class="fa-solid fa-angles-right"></i>Long-lasting battery</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="btn-box">
+                                                        <a class="read-more theme-btn" href="{% url 'products' %}">View Products <i class="fal fa-angle-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="team-item wow fadeInUp" data-wow-delay="0.7s">
+                                                <div class="team-img w_img">
+                                                    <a href="{% url 'products' %}"><img src="{% static 'img/product/homeapp.jpg'%}" alt="Image Not Found"></a>
+                                                </div>
+                                                <div class="team-content">
+                                                    <span class="gear-icon"></span>
+                                                    <h5 class="team-content-title"><a href="{% url 'products' %}">Home Appliances</a></h5>
+                                                    <span class="team-content-subtitle">Comfort</span>
+                                                    <div class="middle-content">
+                                                        <ul class="list">
+                                                            <li><i class="fa-solid fa-angles-right"></i> Modern & energy-efficient</li>
+                                                            <li><i class="fa-solid fa-angles-right"></i> Durable & reliable</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="btn-box">
+                                                        <a class="read-more theme-btn" href="{% url 'products' %}">View Products <i class="fal fa-angle-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="team-item wow fadeInUp" data-wow-delay="0.7s">
+                                                <div class="team-img w_img">
+                                                    <a href="{% url 'products' %}"><img src="{% static 'img/product/solar.jpg'%}" alt="Image Not Found"></a>
+                                                </div>
+                                                <div class="team-content">
+                                                    <span class="gear-icon"></span>
+                                                    <h5 class="team-content-title"><a href="{% url 'products' %}">Solar Products</a></h5>
+                                                    <span class="team-content-subtitle">Sustainability</span>
+                                                    <div class="middle-content">
+                                                        <ul class="list">
+                                                            <li><i class="fa-solid fa-angles-right"></i>High-efficiency panels</li>
+                                                            <li><i class="fa-solid fa-angles-right"></i>Cost-effective solutions</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="btn-box">
+                                                        <a class="read-more theme-btn" href="{% url 'products' %}">View Products <i class="fal fa-angle-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="team-item wow fadeInUp" data-wow-delay="0.7s">
+                                                <div class="team-img w_img">
+                                                    <a href="{% url 'products' %}"><img src="{% static 'img/product/automation.jpg'%}" alt="Image Not Found"></a>
+                                                </div>
+                                                <div class="team-content">
+                                                    <span class="gear-icon"></span>
+                                                    <h5 class="team-content-title"><a href="{% url 'products' %}">Automation Products</a></h5>
+                                                    <span class="team-content-subtitle">Efficiency</span>
+                                                    <div class="middle-content">
+                                            
+                                                        <ul class="list">
+                                                            <li><i class="fa-solid fa-angles-right"></i> Smart control systems</li>
+                                                            <li><i class="fa-solid fa-angles-right"></i>Mobile app integration</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="btn-box">
+                                                        <a class="read-more theme-btn" href="{% url 'products' %}">View Products <i class="fal fa-angle-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- team-testimonial-area-end -->
+
+            {% comment %} <!-- shop area start -->
             <section>
-                <div class="product-area pt-120">
-                 
+                <div class="shop-area pt-115 pb-80">
                     <div class="container">
-                       
                         <div class="row">
-                            <div class="col-xl-6 col-lg-6 ">
-                                <div class="product-img w_img pb-40 pb-lg-0 pr-40 wow fadeInUp" data-wow-delay="0.3s">
-                                    <img src="{% static 'img/product/product-1.png'%}" alt="Image Not Found">
-                                </div>
-                            </div>
-                            <div class="col-xl-6 col-lg-6">
-                                <div class="section-area mb-45">
-                                    <span class="section-subtitle mb-2 wow fadeInUp" data-wow-delay="0.1s">Latest Product</span>
-                                    <h2 class="section-title mb-25 wow fadeInUp" data-wow-delay="0.3s">Our Latest Product That You Needed.</h2>
-                                    <p class="section-text wow fadeInUp mb-0" data-wow-delay="0.5s">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout..</p>
-                                </div>
-                                <div class="product-circle mb-70">
-                                    <div class="product-circle-item wow fadeInUp" data-wow-delay="0.7s">
-                                        <svg class="radial-progress web-design" data-percentage="70" viewBox="0 0 80 80">
-                                            <circle class="incomplete" cx="40" cy="40" r="35"></circle>
-                                            <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
-                                            <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">70%</text>
-                                        </svg>
-                                        <h4 class="product-item-title">Product Marketing</h4>
-                                    </div>
-                                    <div class="product-circle-item wow fadeInUp" data-wow-delay="0.85s">
-                                        <svg class="radial-progress web-design" data-percentage="65" viewBox="0 0 80 80">
-                                            <circle class="incomplete" cx="40" cy="40" r="35"></circle>
-                                            <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
-                                            <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">65%</text>
-                                        </svg>
-                                        <h4 class="product-item-title">Secure Development</h4>
-                                    </div>
-                                    <div class="product-circle-item wow fadeInUp" data-wow-delay="1s">
-                                        <svg class="radial-progress web-design" data-percentage="80" viewBox="0 0 80 80">
-                                            <circle class="incomplete" cx="40" cy="40" r="35"></circle>
-                                            <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
-                                            <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">80%</text>
-                                        </svg>
-                                        <h4 class="product-item-title">Fast Investment</h4>
-                                    </div>
+                            <div class="col-12">
+                                <div class="section-area text-center mb-45">
+                                    <span class="section-subtitle mb-2 wow fadeInUp" data-wow-delay="0.1s">Our Services </span>
+                                    <h2 class="section-title mb-15 wow fadeInUp" data-wow-delay="0.3s">Smart & Secure Systems</h2>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="product-wrapper-bg">
-                        <div class="product-wraps container">
-                            <div class="inner-wrap">
-                                <div class="product-content has-spaces">
-                                    <div class="product-inner">
-                                        <div class="product-item wow fadeInUp" data-wow-delay="0.3s">
-                                            <div class="product-icon">
-                                                <i class="fal fa-drone-alt"></i>
-                                            </div>
-                                            <div class="product-info">
-                                                <h4>Drone<br> Camera</h4>
-                                            </div>
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-4 col-md-6">
+                                <div class="shop-item mb-40 wow" data-wow-delay="0.3s" data-aos="fade-down" data-aos-delay="200">
+                                    <div class="shop-img w_img">
+                                        <a href="shop-details.html"><img src="{% static 'img/shop/1.png'%}" alt="Image Not Found"></a>
+                                      <div class="shop-cart-action">
+                                            <div class="shop-cart-icon"><a href="cart.html"><i class="fal fa-shopping-cart"></i> Add To Cart</a></div>
                                         </div>
-                                        <div class="product-item wow fadeInUp" data-wow-delay="0.55s">
-                                            <div class="product-icon">
-                                                <i class="fal fa-fingerprint"></i>
-                                            </div>
-                                            <div class="product-info">
-                                                <h4>Finger Print<br> Access</h4>
-                                            </div>
+                                    </div>
+                                    <div class="shop-content">
+                                        <div class="shop-content-rating">
+                                           
+                                            <h5>CCTV Services</h5>
                                         </div>
-                                        <div class="product-item wow fadeInUp" data-wow-delay="0.7s">
-                                            <div class="product-icon">
-                                                <i class="fal fa-tv-alt"></i>
-                                            </div>
-                                            <div class="product-info">
-                                                <h4>Video<br> System</h4>
-                                            </div>
+                                       <p style="text-align: justify;">Explore our wide range of technology and energy solutions — from CCTV surveillance to smart automation. Experience performance, comfort, and sustainability with our desktops, laptops, home appliances, and solar systems.</p>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6">
+                                <div class="shop-item mb-40 wow " data-wow-delay="0.5s" data-aos="fade-down" data-aos-delay="300">
+                                    <div class="shop-img w_img">
+                                        <a href="shop-details.html"><img src="{% static 'img/shop/2.png'%}" alt="Image Not Found"></a>
+                                        <div class="shop-cart-action">
+                                            <div class="shop-cart-icon"><a href="cart.html"><i class="fal fa-shopping-cart"></i> Add To Cart</a></div>
                                         </div>
-                                        <div class="product-item wow fadeInUp" data-wow-delay="0.85s">
-                                            <div class="product-icon">
-                                                <i class="fal fa-cogs"></i>
-                                            </div>
-                                            <div class="product-info">
-                                                <h4>CCTV <br> installation</h4>
-                                            </div>
+                                    </div>
+                                    <div class="shop-content">
+                                        <div class="shop-content-rating">
+                                            <a href="#"><i class="fas fa-star"></i></a>
+                                            <a href="#"><i class="fas fa-star"></i></a>
+                                            <a href="#"><i class="fas fa-star"></i></a>
+                                            <a href="#"><i class="fas fa-star"></i></a>
+                                            <a href="#"><i class="fas fa-star"></i></a>
                                         </div>
-                                        <div class="product-item wow fadeInUp" data-wow-delay="1s" >
-                                            <div class="product-icon">
-                                                <i class="fal fa-shield-alt"></i>
-                                            </div>
-                                            <div class="product-info">
-                                                <h4>Security<br> Consulting</h4>
-                                            </div>
+                                        <h3 class="shop-content-title">
+                                            <a href="shop-details.html">External Web Camera</a></h3>
+                                        <div class="shop-content-price">
+                                            <a href="#">$299.00</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6">
+                                <div class="shop-item mb-40 wow" data-wow-delay="0.7s" data-aos="fade-down" data-aos-delay="400">
+                                    <div class="shop-img w_img">
+                                        <a href="shop-details.html"><img src="{% static 'img/shop/3.png'%}" alt="Image Not Found"></a>
+                                        <div class="shop-cart-action">
+                                            <div class="shop-cart-icon"><a href="cart.html"><i class="fal fa-shopping-cart"></i> Add To Cart</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="shop-content">
+                                        <div class="shop-content-rating">
+                                            <a href="#"><i class="fas fa-star"></i></a>
+                                            <a href="#"><i class="fas fa-star"></i></a>
+                                            <a href="#"><i class="fas fa-star"></i></a>
+                                            <a href="#"><i class="fas fa-star"></i></a>
+                                            <a href="#"><i class="fas fa-star"></i></a>
+                                        </div>
+                                        <h3 class="shop-content-title">
+                                            <a href="shop-details.html">CC Tv Bullet Camera</a></h3>
+                                        <div class="shop-content-price">
+                                            <a href="#">$299.00</a>
                                         </div>
                                     </div>
                                 </div>
@@ -258,178 +395,120 @@
                     </div>
                 </div>
             </section>
-            <!-- product area end -->
+            <!-- shop area end --> {% endcomment %}
 
-             <!-- portfolio area start -->
+             <!-- blog area start -->
             <section>
-                <div class="portfolio-area ">
-                      <h3 class="mt-35 mb-35" style="text-align: center; color: #006464;">OUR SERVICES</h3>
-                    <div class="portfolio-wrap">
-                        <div class="portfolio-controller">
-                            <div class="swiper-container portfolio-thumbs">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="controller-item">
-                                            <div class="controller-icon">
-                                                <i class="fal fa-camera-alt"></i>
-                                            </div>
-                                            <div class="controller-info">
-                                                <h4>Automatic<br> Camera</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="controller-item">
-                                            <div class="controller-icon">
-                                                <i class="fal fa-fingerprint"></i>
-                                            </div>
-                                            <div class="controller-info">
-                                                <h4>Access<br> Control</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="controller-item">
-                                            <div class="controller-icon">
-                                                <i class="fal fa-tv-alt"></i>
-                                            </div>
-                                            <div class="controller-info">
-                                                <h4>Video<br> Intercoms</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="controller-item">
-                                            <div class="controller-icon">
-                                                <i class="fal fa-chart-network"></i>
-                                            </div>
-                                            <div class="controller-info">
-                                                <h4>Smart<br> Systems</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="controller-item">
-                                            <div class="controller-icon">
-                                                <i class="fal fa-shield-alt"></i>
-                                            </div>
-                                            <div class="controller-info">
-                                                <h4>Electronic<br> Security</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="portfolio-navigation">
-                                    <div class="portfolio-swiper-prev"><i class="fal fa-angle-left"></i></div>
-                                    <div class="portfolio-swiper-next"><i class="fal fa-angle-right"></i></div>
+                <div class="blog-area pt-110 pb-80">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="section-area text-center mb-45">
+                                    <span class="section-subtitle mb-2 wow fadeInUp" data-wow-delay="0.1s">Our Services </span>
+                                    <h2 class="section-title mb-15 wow fadeInUp" data-wow-delay="0.3s">Smart & Secure Systems</h2>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-container portfolio-active">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="portfolio-item bg-default" data-background="{% static 'img/portfolio/1.jpg'%}">
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class="col-xl-6 col-lg-8">
-                                                    <div class="portfolio-content">
-                                                        <h2 class="portfolio-content-title wow fadeInUp" data-wow-delay="0.1s">Automatic Camera</h2>
-                                                        <p class=" wow fadeInUp" data-wow-delay="0.2s">We harness our vast resources of worldwide engineers, designers, and fabricators to provide the best procurement options.</p>
-                                                        <div class="theme-buttons wow fadeInUp" data-wow-delay="0.3s">
-                                                            <a class="theme-button" href="portfolio-details.html">
-                                                                <span>Read More</span><i class="fal fa-long-arrow-right"></i>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-6 col-md-6">
+                                <div class="blog-post mb-40 wow" data-wow-delay="0.3s" data-aos="fade-down" data-aos-delay="100">
+                                    
+                                    <div class="blog-post-img w_img">
+                                        <a href="blog-details.html"><img src="{% static 'img/blog/1.jpg'%}" alt="Not Found"></a>
+                                        <div class="blog-post-category">
+                                            <span>Services</span>
                                         </div>
                                     </div>
+                                    <div class="blog-post-content">
+                                        <div class="blog-post-meta">
+                                            <h4 style="color: #006464;">CCTV Services</h4>
+                                            {% comment %} <ul>
+                                                <li class="post-date">10 Aug 2022</li>
+                                                <li class="post-author"> By <a href="blog-detials.html">demongo</a> </li>
+                                            </ul> {% endcomment %}
+                                        </div>
+                                        <p style="text-align: justify;">
+                                         Secure your home or business with advanced CCTV solutions, including installation, monitoring, and maintenance for complete protection
+                                        </p>
+                                        <div class="blog-post-info1">
+                                        <div class="blog-post-btn">
+                                            <a href="{% url 'services' %}">
+                                                <span>Read More</span>
+                                                <i class="fal fa-long-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    </div>
+                                   
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="portfolio-item bg-default" data-background="{% static 'img/portfolio/2.jpg'%}">
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class="col-xl-6 col-lg-8">
-                                                    <div class="portfolio-content">
-                                                        <h2 class="portfolio-content-title wow fadeInUp"  data-wow-delay="0.1s">Access Control</h2>
-                                                        <p class=" wow fadeInUp" data-wow-delay="0.2s">We harness our vast resources of worldwide engineers, designers, and fabricators to provide the best procurement options.</p>
-                                                        <div class="theme-buttons wow fadeInUp" data-wow-delay="0.3s">
-                                                            <a class="theme-button" href="portfolio-details.html">
-                                                                <span>Read More</span><i class="fal fa-long-arrow-right"></i>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-6 col-md-6">
+                                <div class="blog-post mb-40 wow " data-wow-delay="0.5s" data-aos="fade-down" data-aos-delay="200">
+                                   
+                                    <div class="blog-post-img w_img">
+                                        <a href="blog-details.html"><img src="{% static 'img/blog/2.jpg'%}" alt="Not Found"></a>
+                                        <div class="blog-post-category">
+                                            <span>Services</span>
                                         </div>
                                     </div>
+                                    <div class="blog-post-content">
+                                         <div class="blog-post-meta">
+                                            <h4 style="color: #006464;">Computer Services</h4>
+                                            {% comment %} <ul>
+                                                <li class="post-date">10 Aug 2022</li>
+                                                <li class="post-author"> By <a href="blog-detials.html">demongo</a> </li>
+                                            </ul> {% endcomment %}
+                                        </div>
+                                        <p style="text-align: justify;">
+                                         Keep your desktops and laptops running smoothly with expert repairs, upgrades, and maintenance for reliable performance every day.
+                                        </p>
+                                        <div class="blog-post-info1">
+                                        <div class="blog-post-btn">
+                                            <a href="{% url 'services' %}">
+                                                <span>Read More</span>
+                                                <i class="fal fa-long-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="portfolio-item bg-default" data-background="{% static 'img/portfolio/3.jpg'%}">
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class="col-xl-6 col-lg-8">
-                                                    <div class="portfolio-content">
-                                                        <h2 class="portfolio-content-title wow fadeInUp"  data-wow-delay="0.1s">Video Intercoms</h2>
-                                                        <p class=" wow fadeInUp" data-wow-delay="0.2s">We harness our vast resources of worldwide engineers, designers, and fabricators to provide the best procurement options.</p>
-                                                        <div class="theme-buttons wow fadeInUp" data-wow-delay="0.3s">
-                                                            <a class="theme-button" href="portfolio-details.html">
-                                                                <span>Read More</span><i class="fal fa-long-arrow-right"></i>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-6 col-md-6">
+                                <div class="blog-post mb-40 wow " data-wow-delay="0.7s" data-aos="fade-down" data-aos-delay="300">
+                                   
+                                    <div class="blog-post-img w_img">
+                                        <a href="blog-details.html"><img src="{% static 'img/blog/3.jpg'%}" alt="Not Found"></a>
+                                        <div class="blog-post-category">
+                                            <span>Services</span>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="portfolio-item bg-default" data-background="{% static 'img/portfolio/4.jpg'%}">
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class="col-xl-6 col-lg-8">
-                                                    <div class="portfolio-content">
-                                                        <h2 class="portfolio-content-title wow fadeInUp"  data-wow-delay="0.1s">Smart Systems</h2>
-                                                        <p class=" wow fadeInUp" data-wow-delay="0.2s">We harness our vast resources of worldwide engineers, designers, and fabricators to provide the best procurement options.</p>
-                                                        <div class="theme-buttons wow fadeInUp" data-wow-delay="0.3s">
-                                                            <a class="theme-button" href="portfolio-details.html">
-                                                                <span>Read More</span><i class="fal fa-long-arrow-right"></i>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                    <div class="blog-post-content">
+                                         <div class="blog-post-meta">
+                                             <h4 style="color: #006464;">Power Solutions</h4>
+                                        </div>
+                                        <p style="text-align: justify;">
+                                         Ensure uninterrupted power with our UPS and battery solutions, including installation, maintenance, and timely replacements for efficiency.
+                                        </p>
+                                        <div class="blog-post-info1">
+                                        <div class="blog-post-btn">
+                                            <a href="{% url 'services' %}" >
+                                                <span>Read More</span>
+                                                <i class="fal fa-long-arrow-right"></i>
+                                            </a>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="portfolio-item bg-default" data-background="{% static 'img/portfolio/5.jpg'%}">
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class="col-xl-6 col-lg-8">
-                                                    <div class="portfolio-content">
-                                                        <h2 class="portfolio-content-title wow fadeInUp"  data-wow-delay="0.1s">Electronic Security</h2>
-                                                        <p class=" wow fadeInUp" data-wow-delay="0.2s">We harness our vast resources of worldwide engineers, designers, and fabricators to provide the best procurement options.</p>
-                                                        <div class="theme-buttons wow fadeInUp" data-wow-delay="0.3s">
-                                                            <a class="theme-button" href="portfolio-details.html">
-                                                                <span>Read More</span><i class="fal fa-long-arrow-right"></i>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                     </div>
+                                   
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- portfolio area end -->
+            <!-- blog area end -->
 
-             <!-- contact area start -->
+            <!-- contact area start -->
             <section>
                 <div class="contact-area pt-110 pb-120">
                     <div class="container">
@@ -437,7 +516,7 @@
                             <div class="col-12">
                                 <div class="section-area text-center mb-35">
                                     <!-- <span class="section-subtitle mb-2 wow fadeInUp" data-wow-delay="0.1s">Interested In</span> -->
-                                    <h2 class="section-title mb-15 wow fadeInUp" data-wow-delay="0.3s" style="color: #006464;">GET IN TOUCH</h2>
+                                    <h2 class="section-title mb-15 wow fadeInUp" data-wow-delay="0.3s" style="color: #ea6b08;">GET IN TOUCH</h2>
                                 </div>
                             </div>
                         </div>
@@ -523,6 +602,8 @@
                 </div>
             </section>
             <!-- contact area end -->
+            
+
         </main>
 
 {% endblock content %}

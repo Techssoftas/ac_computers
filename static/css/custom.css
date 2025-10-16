@@ -123,7 +123,7 @@
 .form-field textarea {
   width: 100%;
   padding: 10px;
-  background-color: white;
+  background-color: #8e9499a6;
   color: white;
   border-radius: 5px;
   border: none;
@@ -162,7 +162,7 @@
 
 .copyright-text i {
   padding: 6px;
-  background-color: aliceblue;
+  background-color: #6c757d5c;
   text-align: center;
   border-radius: 10px;
   color: #006464;
@@ -175,6 +175,33 @@
 
 .top {
   margin-top: 120px;
+}
+
+/* our products image */
+.product-img1{
+  width: 250px;
+  height:200px;
+  border-radius: 10px;
+}
+
+/* Services Readmore */
+.blog-post-info1 {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  padding: 15px 25px 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.blog-post-info1:hover {
+  background-color: #046a6a57;
+}
+
+.blog-post-info1 span{
+  color: #006464;
+}
+
+.blog-post-info1 i {
+  color: #006464;
 }
 
 @media (max-width: 748px) {

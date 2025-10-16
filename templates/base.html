@@ -5,7 +5,7 @@
 <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Aakash Computers</title>
+        <title>Tecxtronics</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="shortcut icon" type="image/x-icon" href="{% static 'img/favicon.png' %}">
@@ -23,8 +23,11 @@
         <link rel="stylesheet" href="{% static 'css/swipper.css' %}">
         <link rel="stylesheet" href="{% static 'css/animated-circle.css' %}">
         <link rel="stylesheet" href="{% static 'css/main.css' %}">
-         <link rel="stylesheet" href="{% static 'css/custom.css' %}">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+        <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+        <!-- AOS CSS -->
+        <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
 </head>
      
     <body>
@@ -35,7 +38,7 @@
                     <div class="col-xl-6 col-8">
                         <div class="sidebar-logo">
                             {% comment %} <a href="index.html"><img src="{% static 'img/logo/logo.png' %}" alt="logo-img"></a> {% endcomment %}
-                             <h5 style="color:#ea6b08;">Aakash Computers</h5>
+                             <h5 style="color:#ea6b08;">Tecxtronics</h5>
                         </div>
                     </div>
                     <div class="col-xl-6 col-4">
@@ -109,7 +112,7 @@
                             <div class="logo">
                                 <a href="{% url 'index' %}">
                                     {% comment %} <img class="logo-1" src="{% static 'img/logo/logo.png' %}" alt="Image Not Found"> {% endcomment %}
-                                    <h5 style="color:#ea6b08;">Aakash Computers</h5>
+                                    <h5 style="color:#ea6b08;">Tecxtronics</h5>
                                 </a>
                             </div>
                             <div class="middle-info d-none d-lg-flex">
@@ -159,26 +162,13 @@
                                     <li>
                                         <a href="{% url 'index' %}">Home</a>
                                     </li>
-                                    <li><a href="{% url 'about' %}">About</a></li>
-                                    <li class="menu-has-child">
-                                        <a href="service.html">Products</a>
-                                        <ul class="submenu">
-                                            <li><a href="service.html">CCTV</a></li>
-                                            <li><a href="service.html">Desktop</a></li>
-                                            <li><a href="service.html">Laptop</a></li>
-                                            <li><a href="service.html">Home Appliances</a></li>
-                                            <li><a href="about.html">Automation</a></li>
-                                            <li><a href="about.html">Solar</a></li>
-                                        </ul>
+                                    <li>
+                                        <a href="{% url 'about' %}">About</a></li>
+                                    <li>
+                                       <a href="{% url 'products' %}">Products</a>
                                     </li>   
-                                    <li class="menu-has-child">
+                                    <li>
                                         <a href="{% url 'services' %}">Services</a>
-                                         <ul class="submenu">
-                                            <li><a href="service.html">CCTV Services</a></li>
-                                            <li><a href="service.html">Desktop Services</a></li>
-                                            <li><a href="service.html">Laptop Services</a></li>
-                                            <li><a href="service.html">UPS & Battery Services</a></li>
-                                        </ul>
                                     </li>
                                     <li>
                                        <a href="{% url 'contact' %}">Contact</a>
@@ -204,10 +194,10 @@
                         <div class="col-xl-4 col-lg-12">
                              <div class="footer-menu-wrap bottom">
                                     <div class="footer-widget">
-                                        <h3 class="footer-widget-title">About us</h3>
-                                        <h5 style="color: white;font-weight: normal;">Aakash Computers</h5>
+                                        {% comment %} <h3 class="footer-widget-title">About us</h3> {% endcomment %}
+                                        <h4 class="footer-widget-title">Tecxtronics</h4>
                                         <p>Your trusted destination for quality electronic products and reliable repair services.
-                                       We specialize in computer sales, accessories, and maintenance, offering top brands and expert technical support.</p> 
+                                       {% comment %} We specialize in computer sales, accessories, and maintenance, offering top brands and expert technical support.</p>  {% endcomment %}
                                     </div>
                                 </div>
                         </div>
@@ -220,9 +210,6 @@
                                             <ul>
                                                 <li><a href="about.html">About</a></li>
                                                 <li><a href="blog.html">Products</a></li>
-                                                <li><a href="service.html">Home Appliances</a></li>
-                                                <li><a href="about.html">Automation</a></li>
-                                                <li><a href="about.html">Solar </a></li>
                                                 <li><a href="about.html">Services </a></li>
                                                  <li><a href="about.html">Contact </a></li>
                                             </ul>
@@ -279,7 +266,7 @@
                     <div class="row">
                         <div class="col-12 footer-align">
                             <div class="copyright-text wow fadeInUp" data-wow-delay="0.5s">
-                                <p>Copyright © 2025 |<a href="#">Aakash  Computers</a></p>
+                                <p>Copyright © 2025 |<a href="#">Tecxtronics</a></p>
                             </div>
                             <div class="copyright-text wow fadeInUp icon" data-wow-delay="0.5s">
                                 <span><i class="fa-brands fa-facebook-f" style="padding-left: 8px;padding-right: 8px;"></i></span>
@@ -312,6 +299,18 @@
         <script src="{% static 'js/appear.min.js' %}"></script>
         <script src="{% static 'js/aminated-circle.js' %}"></script>
         <script src="{% static 'js/main.js' %}"></script>
+        <!-- AOS JS -->
+        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+         <script>
+            AOS.init({
+              duration: 1000,  // Animation duration (in ms)
+              offset: 100,     // Trigger offset from viewport
+              easing: 'ease-in-out',
+              once: false,     // 👈 Animate every time on scroll
+              mirror: true,    // Optional: animates when scrolling up too
+            });
+        </script>
+
     </body>
 
 </html>
