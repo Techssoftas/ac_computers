@@ -1,158 +1,459 @@
-{% extends 'base.html'  %}
+{% extends 'base.html' %}
 {% load static %}
-{% block title %}About - AC Computers{% endblock title %}
+{% block title %}
+  About - AC Computers
+{% endblock %}
 {% block content %}
- <main>
-     <!-- team-testimonial-area -->
-            <div class="team-testimonial-area bg-light pt-110 pb-65">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="section-area text-center mb-45">
-                                {% comment %} <span class="section-subtitle mb-2 wow fadeInUp" data-wow-delay="0.1s">Our Products </span> {% endcomment %}
-                                <h5 class="section-title mb-15 wow fadeInUp" data-wow-delay="0.3s" style="color:#ea6b08">Our Products</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="team-content-wrapper mb-40">
-                                <div class="swiper-container team-active-2 pb-80">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="team-item wow fadeInUp" data-wow-delay="0.1s">
-                                                <div class="team-img w_img">
-                                                    <a href="{% url 'products' %}"><img src="{% static 'img/product/cctv2.jpg'%}" alt="Image Not Found"></a>
-                                                </div>
-                                                <div class="team-content">
-                                                    <span class="gear-icon"></span>
-                                                    <h5 class="team-content-title"><a href="{% url 'products' %}">CCTV Cameras</a></h5>
-                                                    <span class="team-content-subtitle">Surveillance</span>
-                                                    <div class="middle-content">
-                                                        <ul class="list">
-                                                            <li><i class="fa-solid fa-angles-right"></i>High-resolution surveillance</li>
-                                                            <li><i class="fa-solid fa-angles-right"></i>24/7 security monitoring</li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="btn-box">
-                                                        <a class="read-more theme-btn" href="{% url 'products' %}">View Products <i class="fal fa-angle-right"></i></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="team-item  wow fadeInUp" data-wow-delay="0.3s">
-                                                <div class="team-img w_img">
-                                                    <a href="{% url 'products' %}"><img src="{% static 'img/product/desktop1.jpg'%}" alt="Image Not Found"></a>
-                                                </div>
-                                                <div class="team-content">
-                                                    <span class="gear-icon"></span>
-                                                    <h5 class="team-content-title"><a href="{% url 'products' %}">Desktop</a></h5>
-                                                    <span class="team-content-subtitle">Performance</span>
-                                                    <div class="middle-content">
-                                                        <ul class="list" >
-                                                            <li><i class="fa-solid fa-angles-right"></i>Fast and reliable performance</li>
-                                                            <li><i class="fa-solid fa-angles-right"></i>Smooth multitasking</li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="btn-box">
-                                                        <a class="read-more theme-btn" href="{% url 'products' %}">View Products <i class="fal fa-angle-right"></i></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="team-item wow fadeInUp" data-wow-delay="0.5s">
-                                                <div class="team-img w_img">
-                                                    <a href="{% url 'products' %}"><img src="{% static 'img/product/laptop.jpg'%}" alt="Image Not Found"></a>
-                                                </div>
-                                                <div class="team-content">
-                                                    <span class="gear-icon"></span>
-                                                    <h5 class="team-content-title"><a href="{% url 'products' %}">Laptop</a></h5>
-                                                    <span class="team-content-subtitle">Mobility</span>
-                                                    <div class="middle-content">
-                                                        <ul class="list">
-                                                            <li><i class="fa-solid fa-angles-right"></i> Portable & high-performance</li>
-                                                            <li><i class="fa-solid fa-angles-right"></i>Long-lasting battery</li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="btn-box">
-                                                        <a class="read-more theme-btn" href="{% url 'products' %}">View Products <i class="fal fa-angle-right"></i></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="team-item wow fadeInUp" data-wow-delay="0.7s">
-                                                <div class="team-img w_img">
-                                                    <a href="{% url 'products' %}"><img src="{% static 'img/product/homeapp.jpg'%}" alt="Image Not Found"></a>
-                                                </div>
-                                                <div class="team-content">
-                                                    <span class="gear-icon"></span>
-                                                    <h5 class="team-content-title"><a href="{% url 'products' %}">Home Appliances</a></h5>
-                                                    <span class="team-content-subtitle">Comfort</span>
-                                                    <div class="middle-content">
-                                                        <ul class="list">
-                                                            <li><i class="fa-solid fa-angles-right"></i> Modern & energy-efficient</li>
-                                                            <li><i class="fa-solid fa-angles-right"></i> Durable & reliable</li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="btn-box">
-                                                        <a class="read-more theme-btn" href="{% url 'products' %}">View Products <i class="fal fa-angle-right"></i></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="team-item wow fadeInUp" data-wow-delay="0.7s">
-                                                <div class="team-img w_img">
-                                                    <a href="{% url 'products' %}"><img src="{% static 'img/product/solar.jpg'%}" alt="Image Not Found"></a>
-                                                </div>
-                                                <div class="team-content">
-                                                    <span class="gear-icon"></span>
-                                                    <h5 class="team-content-title"><a href="{% url 'products' %}">Solar Products</a></h5>
-                                                    <span class="team-content-subtitle">Sustainability</span>
-                                                    <div class="middle-content">
-                                                        <ul class="list">
-                                                            <li><i class="fa-solid fa-angles-right"></i>High-efficiency panels</li>
-                                                            <li><i class="fa-solid fa-angles-right"></i>Cost-effective solutions</li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="btn-box">
-                                                        <a class="read-more theme-btn" href="{% url 'products' %}">View Products <i class="fal fa-angle-right"></i></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="team-item wow fadeInUp" data-wow-delay="0.7s">
-                                                <div class="team-img w_img">
-                                                    <a href="{% url 'products' %}"><img src="{% static 'img/product/automation.jpg'%}" alt="Image Not Found"></a>
-                                                </div>
-                                                <div class="team-content">
-                                                    <span class="gear-icon"></span>
-                                                    <h5 class="team-content-title"><a href="{% url 'products' %}">Automation Products</a></h5>
-                                                    <span class="team-content-subtitle">Efficiency</span>
-                                                    <div class="middle-content">
-                                            
-                                                        <ul class="list">
-                                                            <li><i class="fa-solid fa-angles-right"></i> Smart control systems</li>
-                                                            <li><i class="fa-solid fa-angles-right"></i>Mobile app integration</li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="btn-box">
-                                                        <a class="read-more theme-btn" href="{% url 'products' %}">View Products <i class="fal fa-angle-right"></i></a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  <main>
+    <!-- breadcrumb area start -->
+    <section class="bn-slider breadcrumb-height bn-breadcrumb align-items-center d-flex" data-background="{% static 'img/bg/breadcrumb.jpg' %}">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="bn-breadcrumb-wrap text-center">
+              <h2 class="bn-breadcrumb-title wow fadeInUp" data-wow-delay="0.1s">Products</h2>
+              <div class="bn-breadcrumb-list wow fadeInUp" data-wow-delay="0.3s">
+                <a href="{% url 'index' %}">Home</a>
+                <span>Products</span>
+              </div>
             </div>
-            <!-- team-testimonial-area-end -->
- </main>
-{% endblock content %}
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- breadcrumb area end -->
+    <!-- team-testimonial-area -->
+    <div class="team-testimonial-area bg-light pt-60 pb-20">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-area text-center mb-45">
+              <span class="section-subtitle mb-2 wow fadeInUp" data-wow-delay="0.1s">Our Products </span> 
+              <h5 class="section-title mb-15 wow fadeInUp" data-wow-delay="0.3s" >Seamless Experience</h5>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="team-content-wrapper mb-40">
+              <div class="swiper-container team-active-2 pb-80">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="team-item wow fadeInUp" data-wow-delay="0.1s">
+                      <div class="team-img w_img">
+                        <a href="{% url 'products' %}"><img src="{% static 'img/product/cctv2.jpg' %}" alt="Image Not Found" /></a>
+                      </div>
+                      <div class="team-content">
+                        <span class="gear-icon"></span>
+                        <h5 class="team-content-title"><a href="{% url 'products' %}">CCTV Cameras</a></h5>
+                        <span class="team-content-subtitle">Surveillance</span>
+                        <div class="middle-content">
+                          <ul class="list">
+                            <li>
+                              <i class="fa-solid fa-angles-right"></i>High-resolution surveillance
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-angles-right"></i>24/7 security monitoring
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="btn-box">
+                          <a class="read-more theme-btn" href="{% url 'products' %}">View Products <i class="fal fa-angle-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="team-item wow fadeInUp" data-wow-delay="0.3s">
+                      <div class="team-img w_img">
+                        <a href="{% url 'products' %}"><img src="{% static 'img/product/desktop1.jpg' %}" alt="Image Not Found" /></a>
+                      </div>
+                      <div class="team-content">
+                        <span class="gear-icon"></span>
+                        <h5 class="team-content-title"><a href="{% url 'products' %}">Desktop</a></h5>
+                        <span class="team-content-subtitle">Performance</span>
+                        <div class="middle-content">
+                          <ul class="list">
+                            <li>
+                              <i class="fa-solid fa-angles-right"></i>Fast and reliable performance
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-angles-right"></i>Smooth multitasking
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="btn-box">
+                          <a class="read-more theme-btn" href="{% url 'products' %}">View Products <i class="fal fa-angle-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="team-item wow fadeInUp" data-wow-delay="0.5s">
+                      <div class="team-img w_img">
+                        <a href="{% url 'products' %}"><img src="{% static 'img/product/laptop.jpg' %}" alt="Image Not Found" /></a>
+                      </div>
+                      <div class="team-content">
+                        <span class="gear-icon"></span>
+                        <h5 class="team-content-title"><a href="{% url 'products' %}">Laptop</a></h5>
+                        <span class="team-content-subtitle">Mobility</span>
+                        <div class="middle-content">
+                          <ul class="list">
+                            <li>
+                              <i class="fa-solid fa-angles-right"></i> Portable & high-performance
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-angles-right"></i>Long-lasting battery
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="btn-box">
+                          <a class="read-more theme-btn" href="{% url 'products' %}">View Products <i class="fal fa-angle-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="team-item wow fadeInUp" data-wow-delay="0.7s">
+                      <div class="team-img w_img">
+                        <a href="{% url 'products' %}"><img src="{% static 'img/product/homeapp.jpg' %}" alt="Image Not Found" /></a>
+                      </div>
+                      <div class="team-content">
+                        <span class="gear-icon"></span>
+                        <h5 class="team-content-title"><a href="{% url 'products' %}">Home Appliances</a></h5>
+                        <span class="team-content-subtitle">Comfort</span>
+                        <div class="middle-content">
+                          <ul class="list">
+                            <li>
+                              <i class="fa-solid fa-angles-right"></i> Modern & energy-efficient
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-angles-right"></i> Durable & reliable
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="btn-box">
+                          <a class="read-more theme-btn" href="{% url 'products' %}">View Products <i class="fal fa-angle-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="team-item wow fadeInUp" data-wow-delay="0.7s">
+                      <div class="team-img w_img">
+                        <a href="{% url 'products' %}"><img src="{% static 'img/product/solar.jpg' %}" alt="Image Not Found" /></a>
+                      </div>
+                      <div class="team-content">
+                        <span class="gear-icon"></span>
+                        <h5 class="team-content-title"><a href="{% url 'products' %}">Solar Products</a></h5>
+                        <span class="team-content-subtitle">Sustainability</span>
+                        <div class="middle-content">
+                          <ul class="list">
+                            <li>
+                              <i class="fa-solid fa-angles-right"></i>High-efficiency panels
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-angles-right"></i>Cost-effective solutions
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="btn-box">
+                          <a class="read-more theme-btn" href="{% url 'products' %}">View Products <i class="fal fa-angle-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="team-item wow fadeInUp" data-wow-delay="0.7s">
+                      <div class="team-img w_img">
+                        <a href="{% url 'products' %}"><img src="{% static 'img/product/automation.jpg' %}" alt="Image Not Found" /></a>
+                      </div>
+                      <div class="team-content">
+                        <span class="gear-icon"></span>
+                        <h5 class="team-content-title"><a href="{% url 'products' %}">Automation Products</a></h5>
+                        <span class="team-content-subtitle">Efficiency</span>
+                        <div class="middle-content">
+                          <ul class="list">
+                            <li>
+                              <i class="fa-solid fa-angles-right"></i> Smart control systems
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-angles-right"></i>Mobile app integration
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="btn-box">
+                          <a class="read-more theme-btn" href="{% url 'products' %}">View Products <i class="fal fa-angle-right"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- team-testimonial-area-end -->
+
+    <!-- shop details start -->
+    <section style="background-color: #00646417;">
+      <div class="shop-details-area pt-60 pb-20">
+        <div class="container">
+          <div class="row">
+               <h3 class="shop-details-title mb-40" style="color: #006464; text-align: center;">CCTV Cameras</h3>
+            <div class="col-xl-6 col-lg-6">
+              <div class="shop-details-img w_img mb-40 wow fadeInLeft" data-wow-delay="0.3s" >
+                <img src="{% static 'img/shop/cctv.jpg'%}" alt="Image Not Found" style="height: 400px;"/>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6">
+              <div class="tab-pane fade show  wow fadeInUp" data-wow-delay="0.1s" id="nav-desc" role="tabpanel" aria-labelledby="nav-desc-tab">
+                
+                <div class="row">
+                    
+                  <div class="col-xl-10">
+                 
+                    <div class="description-text">
+                      <p>
+                        CCTV cameras provide reliable surveillance for homes, offices, and businesses, helping to monitor 
+                        activities in real time and enhance security. With high-resolution recording, night vision, and remote 
+                        access, they ensure complete protection and peace of mind.
+                      </p>
+                    </div>
+                    <div class="description-list">
+                      <ul>
+                        <li>
+                          <i class="fas fa-check-circle"></i>High-Resolution Video: Clear and detailed footage for accurate monitoring.
+                        <li>
+                          <i class="fas fa-check-circle"></i>Motion Detection: Alerts you immediately when unusual activity is detected.
+                        <li>
+                          <i class="fas fa-check-circle"></i> Night Vision: Continuous surveillance even in low-light or dark conditions.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="shop-details-area pt-20 pb-20">
+        <div class="container">
+          <div class="row">
+               <h3 class="shop-details-title mb-40" style="color: #006464; text-align: center;">Desktop</h3>
+            <div class="col-xl-6 col-lg-6">
+              <div class="shop-details-img w_img mb-40 wow fadeInLeft" data-wow-delay="0.3s" >
+                <img src="{% static 'img/shop/desktop.jpg'%}" alt="Image Not Found" style="height: 400px;" />
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6">
+              <div class="tab-pane fade show  wow fadeInUp" data-wow-delay="0.1s" id="nav-desc" role="tabpanel" aria-labelledby="nav-desc-tab">
+                
+                <div class="row">
+                    
+                  <div class="col-xl-10">
+                 
+                    <div class="description-text">
+                      <p>
+                       Desktop computers deliver powerful performance and reliability for everyday computing, gaming, or 
+                       business operations. Designed for long-term use, they offer easy upgrades, enhanced processing power, 
+                       and stable performance to handle demanding tasks with ease.
+                      </p>
+                    </div>
+                    <div class="description-list">
+                      <ul>
+                        <li>
+                          <i class="fas fa-check-circle"></i>High Performance: Equipped with the latest processors for smooth multitasking.
+                        <li>
+                          <i class="fas fa-check-circle"></i>Upgrade-Friendly: Easy to expand storage, memory, or graphics as needed.
+                        </li>
+                        <li>
+                           <i class="fas fa-check-circle"></i> Durable Design: Built for consistent, long-lasting performance.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="shop-details-area pt-20 pb-20">
+        <div class="container">
+          <div class="row">
+               <h3 class="shop-details-title mb-40" style="color: #006464; text-align: center;">Laptops</h3>
+            <div class="col-xl-6 col-lg-6">
+              <div class="shop-details-img w_img mb-40 wow fadeInLeft" data-wow-delay="0.3s" >
+                <img src="{% static 'img/shop/laptop.jpg'%}" alt="Image Not Found" style="height: 400px;" />
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6">
+              <div class="tab-pane fade show  wow fadeInUp" data-wow-delay="0.1s" id="nav-desc" role="tabpanel" aria-labelledby="nav-desc-tab">
+                
+                <div class="row">
+                    
+                  <div class="col-xl-10">
+                 
+                    <div class="description-text">
+                      <p>
+                       Laptops combine performance, portability, and style to suit both personal and professional needs. Designed for 
+                       convenience and efficiency, they deliver fast processing, long battery life, and seamless connectivity, 
+                       making them perfect for work, study, or entertainment on the go.
+                      </p>
+                    </div>
+                    <div class="description-list">
+                      <ul>
+                        <li>
+                          <i class="fas fa-check-circle"></i>Lightweight Design: Easy to carry and ideal for travel or remote work.
+                        <li>
+                          <i class="fas fa-check-circle"></i>Powerful Performance: Equipped with advanced processors for smooth multitasking.
+                        </li>
+                        <li>
+                           <i class="fas fa-check-circle"></i> Long Battery Life: Stay productive longer without frequent charging.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="shop-details-area pt-20 pb-20">
+        <div class="container">
+          <div class="row">
+               <h3 class="shop-details-title mb-40" style="color: #006464; text-align: center;">Home Appliances</h3>
+            <div class="col-xl-6 col-lg-6">
+              <div class="shop-details-img w_img mb-40 wow fadeInLeft" data-wow-delay="0.3s" >
+                <img src="{% static 'img/shop/homeapp.jpg'%}" alt="Image Not Found" style="height: 400px;" />
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6">
+              <div class="tab-pane fade show  wow fadeInUp" data-wow-delay="0.1s" id="nav-desc" role="tabpanel" aria-labelledby="nav-desc-tab">
+                
+                <div class="row">
+                    
+                  <div class="col-xl-10">
+                 
+                    <div class="description-text">
+                      <p>
+                      Home appliances bring comfort, convenience, and efficiency to everyday living. Designed with modern 
+                      technology and durable performance, they simplify household tasks and enhance your lifestyle with 
+                      energy-saving and user-friendly features.
+                      </p>
+                    </div>
+                    <div class="description-list">
+                      <ul>
+                        <li>
+                          <i class="fas fa-check-circle"></i>Energy Efficient: Built to reduce power consumption and save costs.
+                        </li>
+                        <li>
+                          <i class="fas fa-check-circle"></i>User-Friendly Design: Simple controls for effortless operation.
+                        </li>
+                        <li>
+                           <i class="fas fa-check-circle"></i> Durable Performance: Reliable and long-lasting for everyday use.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="shop-details-area pt-20 pb-20">
+          <div class="container">
+          <div class="row">
+               <h3 class="shop-details-title mb-40" style="color: #006464; text-align: center;">Solar Products</h3>
+            <div class="col-xl-6 col-lg-6">
+              <div class="shop-details-img w_img mb-40 wow fadeInLeft" data-wow-delay="0.3s" >
+                <img src="{% static 'img/shop/solar.jpg'%}" alt="Image Not Found" style="height: 400px;" />
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6">
+              <div class="tab-pane fade show  wow fadeInUp" data-wow-delay="0.1s" id="nav-desc" role="tabpanel" aria-labelledby="nav-desc-tab">
+                
+                <div class="row">
+                    
+                  <div class="col-xl-10">
+                 
+                    <div class="description-text">
+                      <p>
+                     Solar products provide sustainable and cost-effective energy solutions for homes and businesses. Designed 
+                     for high efficiency and durability, they help reduce electricity costs while promoting eco-friendly living 
+                     through clean, renewable power.
+                      </p>
+                    </div>
+                    <div class="description-list">
+                      <ul>
+                        <li>
+                          <i class="fas fa-check-circle"></i>High Efficiency: Converts sunlight into maximum usable energy.
+                        </li>
+                        <li>
+                          <i class="fas fa-check-circle"></i>Cost Saving: Reduces dependency on conventional power sources.
+                        </li>
+                        <li>
+                           <i class="fas fa-check-circle"></i> Eco-Friendly: Supports a cleaner and greener environment.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+      </div>
+       <div class="shop-details-area pt-20 pb-60">
+          <div class="container">
+          <div class="row">
+               <h3 class="shop-details-title mb-40" style="color: #006464; text-align: center;">Automation Products</h3>
+            <div class="col-xl-6 col-lg-6">
+              <div class="shop-details-img w_img mb-40 wow fadeInLeft" data-wow-delay="0.3s" >
+                <img src="{% static 'img/shop/automation.jpg'%}" alt="Image Not Found" style="height: 400px;" />
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6">
+              <div class="tab-pane fade show  wow fadeInUp" data-wow-delay="0.1s" id="nav-desc" role="tabpanel" aria-labelledby="nav-desc-tab">
+                
+                <div class="row">
+                    
+                  <div class="col-xl-10">
+                 
+                    <div class="description-text">
+                      <p>
+                        Automation products bring intelligent control and convenience to modern living and workplaces. Designed 
+                        for efficiency, safety, and comfort, they enable smart management of lighting, security, and appliances 
+                        with just a touch or voice command.
+                      </p>
+                    </div>
+                    <div class="description-list">
+                      <ul>
+                        <li>
+                          <i class="fas fa-check-circle"></i>Smart Control: Operate devices easily through mobile apps or voice assistants.
+                        </li>
+                        <li>
+                          <i class="fas fa-check-circle"></i>Energy Efficient: Optimizes power usage for cost-effective operation.
+                        </li>
+                        <li>
+                           <i class="fas fa-check-circle"></i> Enhanced Security: Provides real-time monitoring and automated safety features.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+      </div>
+    </section>
+    <!-- shop details end -->
+  </main>
+{% endblock %}
