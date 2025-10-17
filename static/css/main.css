@@ -8799,6 +8799,18 @@ svg.web-design circle {
     flex-direction: column;
     gap: 30px;
   }
+
+}
+
+@media (max-width: 1025px){
+
+  .footer-widget-title {
+  margin-top: 30px;
+  }
+
+  .pt-85{
+    padding-top: 0px !important;
+  }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .footer-combine.mr-30 {
