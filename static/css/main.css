@@ -7874,7 +7874,7 @@ svg.web-design circle {
 }
 
 .contact-form form textarea {
-  height: 220px;
+  height: 180px;
 }
 
 .contact-top-title {
@@ -8976,3 +8976,8 @@ svg.web-design circle {
 }
 
 /*# sourceMappingURL=main.css.map */
+@media (max-width: 992px) {
+  .contact-form{
+    margin-top: 30px;
+  }
+}

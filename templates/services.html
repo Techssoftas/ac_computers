@@ -11,7 +11,7 @@
                             <div class="bn-breadcrumb-wrap text-center">
                                 <h2 class="bn-breadcrumb-title wow fadeInUp" data-wow-delay="0.1s">Service</h2>
                                 <div class="bn-breadcrumb-list wow fadeInUp" data-wow-delay="0.3s">
-                                    <a href="index.html">Home</a>
+                                    <a href="{% url 'index' %}">Home</a>
                                     <span>Service</span>
                                 </div>
                             </div>
@@ -134,8 +134,16 @@
 
             <!-- service area start -->
             <section>
-                <div class="service-area pt-120 pb-120 service-page">
+                <div class="service-area pt-30 pb-120 service-page">
                     <div class="container">
+                         <div class="row">
+                            <div class="col-12">
+                                <div class="section-area text-center mb-45">
+                                    {% comment %} <span class="section-subtitle mb-2 wow fadeInUp" data-wow-delay="0.1s">Our Services </span> {% endcomment %}
+                                    <h2 class="section-title mb-15 wow fadeInUp" data-wow-delay="0.3s">Delivering Excellence in Every Service</h2>
+                                </div>
+                            </div>
+                        </div>
                         <div class="row g-0">
                             <div class="col-xl-4 col-lg-6 col-md-6">
                                 <div class="service-section wow fadeInUp" data-wow-delay="0.3s">
@@ -147,101 +155,133 @@
                             </div>
                             <div class="col-xl-4 col-lg-6 col-md-6 service-border">
                                 <div class="service-item wow fadeInUp" data-wow-delay="0.4s">
-                                    <div class="service-img bg-default" data-background="{% static 'img/service/1.jpg'%}"></div>
+                                    <div class="service-img bg-default" data-background="{% static 'img/service/service1.jpg'%}"></div>
                                     <div class="service-icon">
-                                        <i class="fal fa-cogs"></i>
+                                        <i class="fal fa-cctv"></i>
                                     </div>
                                     <div class="service-content">
-                                        <h3 class="service-content-title"><a href="service-details.html">CCTV Services</a></h3>
-                                        <p>Professional installation and maintenance of security cameras. 
-                                                            Keep your property safe with 24/7 monitoring solutions.</p>
+                                        <h3 class="service-content-title"><a href="service-details.html">CCTV Camera Installation</a></h3>
+                                        <p>Professional setup of CCTV cameras for homes and offices, ensuring full coverage and security.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-xl-4 col-lg-6 col-md-6 service-border">
                                 <div class="service-item wow fadeInUp" data-wow-delay="0.5s">
-                                    <div class="service-img bg-default" data-background="{% static 'img/service/2.jpg'%}"></div>
+                                    <div class="service-img bg-default" data-background="{% static 'img/service/service2.jpg'%}"></div>
                                     <div class="service-icon">
-                                        <i class="fal fa-chart-network"></i>
+                                        <i class="fal fa-hdd"></i>
                                     </div>
                                     <div class="service-content">
-                                        <h3 class="service-content-title"><a href="service-details.html">Laptop Services</a></h3>
-                                        <p>Comprehensive repair for hardware and software issues. We fix screens, 
-                                                            keyboards, and performance problems quickly.</p>
+                                        <h3 class="service-content-title"><a href="service-details.html">DVR/NVR Configuration</a></h3>
+                                        <p>We configure DVR and NVR systems for seamless recording and secure storage of your footage. </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-xl-4 col-lg-6 col-md-6 service-border">
                                 <div class="service-item wow fadeInUp" data-wow-delay="0.6s">
-                                    <div class="service-img bg-default" data-background="{% static 'img/service/3.jpg'%}"></div>
+                                    <div class="service-img bg-default" data-background="{% static 'img/service/service3.jpg'%}"></div>
                                     <div class="service-icon">
-                                        <i class="fal fa-fingerprint"></i>
+                                        <i class="fal fa-desktop"></i>
                                     </div>
                                     <div class="service-content">
-                                        <h3 class="service-content-title"><a href="service-details.html">Desktop Services</a></h3>
-                                        <p>Expert desktop repair, upgrades, and troubleshooting for faster, reliable home or office setups.</p>
+                                        <h3 class="service-content-title"><a href="service-details.html">Remote CCTV Monitoring</a></h3>
+                                        <p>Access live CCTV footage from mobile or web devices anytime, anywhere, and monitor your property in real time for peace of mind.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-xl-4 col-lg-6 col-md-6 service-border">
                                 <div class="service-item wow fadeInUp" data-wow-delay="0.7s">
-                                    <div class="service-img bg-default" data-background="{% static 'img/service/4.jpg'%}"></div>
+                                    <div class="service-img bg-default" data-background="{% static 'img/service/service4.jpg'%}"></div>
                                     <div class="service-icon">
-                                        <i class="fal fa-camera-alt"></i>
+                                        <i class="fal fa-tools"></i>
                                     </div>
                                     <div class="service-content">
-                                        <h3 class="service-content-title"><a href="service-details.html">DVR/NVR Services</a></h3>
-                                        <p>Setup and configuration of your digital video recorder systems. 
-                                                            Ensure seamless recording and playback for your CCTV footage.</p>
+                                        <h3 class="service-content-title"><a href="service-details.html">Hardware Repair</a></h3>
+                                        <p>Repair screens, keyboards, and other components quickly, getting your devices back in working order with minimal downtime.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-xl-4 col-lg-6 col-md-6 service-border">
                                 <div class="service-item wow fadeInUp" data-wow-delay="0.8s">
-                                    <div class="service-img bg-default" data-background="{% static 'img/service/5.jpg'%}"></div>
+                                    <div class="service-img bg-default" data-background="{% static 'img/service/service5.jpg'%}"></div>
                                     <div class="service-icon">
-                                        <i class="fal fa-cctv"></i>
+                                        <i class="fal fa-laptop-code"></i>
                                     </div>
                                     <div class="service-content">
-                                        <h3 class="service-content-title"><a href="service-details.html">UPS & BATTERY SERVICES</a></h3>
-                                        <p>Installation and maintenance of Uninterruptible Power Supplies. 
-                                                            Protect your equipment from power surges and outages.</p>
+                                        <h3 class="service-content-title"><a href="service-details.html">Software Troubleshooting</a></h3>
+                                        <p>Fix operating system issues, remove viruses, and resolve software problems quickly to keep your devices running smoothly and efficiently.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-xl-4 col-lg-6 col-md-6 service-border">
                                 <div class="service-item wow fadeInUp" data-wow-delay="0.9s">
-                                    <div class="service-img bg-default" data-background="{% static 'img/service/5.jpg'%}"></div>
+                                    <div class="service-img bg-default" data-background="{% static 'img/service/service6.jpg'%}"></div>
                                     <div class="service-icon">
-                                        <i class="fal fa-webcam"></i>
+                                        <i class="fal fa-tachometer-alt"></i>
                                     </div>
                                     <div class="service-content">
-                                        <h3 class="service-content-title"><a href="service-details.html">Camera Configuration & Setup</a></h3>
-                                        <p>Professional installation and configuration of CCTV cameras, ensuring optimal angles, network setup, and reliable monitoring.</p>
+                                        <h3 class="service-content-title"><a href="service-details.html">System Performance Optimization</a></h3>
+                                        <p>Speed up computers and enhance overall performance, ensuring smooth and efficient operation for all your tasks.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-xl-4 col-lg-6 col-md-6 service-border">
                                 <div class="service-item wow fadeInUp" data-wow-delay="1s">
-                                    <div class="service-img bg-default" data-background="{% static 'img/service/5.jpg'%}"></div>
+                                    <div class="service-img bg-default" data-background="{% static 'img/service/service7.jpg'%}"></div>
                                     <div class="service-icon">
-                                        <i class="fal fa-shield-alt"></i>
+                                        <i class="fal fa-bolt"></i>
                                     </div>
                                     <div class="service-content">
-                                        <h3 class="service-content-title"><a href="service-details.html">Electronic Security</a></h3>
-                                        <p>Direct enough off others say eldest may exeter she pain oni. Possible all ignorant supplied get settling marriage</p>
+                                        <h3 class="service-content-title"><a href="service-details.html">UPS Installation & Maintenance</a></h3>
+                                        <p>Install and maintain UPS systems to protect your equipment from power interruptions and ensure smooth operation.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-xl-4 col-lg-6 col-md-6 service-border">
                                 <div class="service-item wow fadeInUp" data-wow-delay="1.1s">
-                                    <div class="service-img bg-default" data-background="{% static 'img/service/5.jpg'%}"></div>
+                                    <div class="service-img bg-default" data-background="{% static 'img/service/service8.jpg'%}"></div>
                                     <div class="service-icon">
-                                        <i class="fal fa-camera-movie"></i>
+                                        <i class="fal fa-battery-full"></i>
                                     </div>
                                     <div class="service-content">
-                                        <h3 class="service-content-title"><a href="service-details.html">Automatic Cameras</a></h3>
-                                        <p>Direct enough off others say eldest may exeter she pain oni. Possible all ignorant supplied get settling marriage</p>
+                                        <h3 class="service-content-title"><a href="service-details.html">Battery Replacement Services</a></h3>
+                                        <p>Replace and maintain batteries for UPS and backup systems, ensuring reliable performance and uninterrupted power for your equipment.</p>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="col-xl-4 col-lg-6 col-md-6 service-border">
+                                <div class="service-item wow fadeInUp" data-wow-delay="0.9s">
+                                    <div class="service-img bg-default" data-background="{% static 'img/service/service9.jpg'%}"></div>
+                                    <div class="service-icon">
+                                        <i class="fal fa-shield-alt"></i>
+                                    </div>
+                                    <div class="service-content">
+                                        <h3 class="service-content-title"><a href="service-details.html">Power Surge Protection</a></h3>
+                                        <p>Protect your devices and electronics from voltage fluctuations and power surges for safe and reliable operation.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-6 col-md-6 service-border">
+                                <div class="service-item wow fadeInUp" data-wow-delay="1s">
+                                    <div class="service-img bg-default" data-background="{% static 'img/service/service10.jpg'%}"></div>
+                                    <div class="service-icon">
+                                        <i class="fal fa-robot"></i>
+                                    </div>
+                                    <div class="service-content">
+                                        <h3 class="service-content-title"><a href="service-details.html">Smart Camera & Automation Setup</a></h3>
+                                        <p>Setup motion detection, alerts, and automated CCTV surveillance for smarter security.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-6 col-md-6 service-border">
+                                <div class="service-item wow fadeInUp" data-wow-delay="1.1s">
+                                    <div class="service-img bg-default" data-background="{% static 'img/service/service11.jpg'%}"></div>
+                                    <div class="service-icon">
+                                        <i class="fal fa-database"></i>
+                                    </div>
+                                    <div class="service-content">
+                                        <h3 class="service-content-title"><a href="service-details.html">Data Recovery & Backup Solutions</a></h3>
+                                        <p>Recover lost data and set up backup systems to prevent future data loss, keeping your important information safe and accessible.</p>
                                     </div>
                                 </div>
                             </div>
@@ -250,6 +290,5 @@
                 </div>
             </section>
             <!-- service area end -->
-
     </main>
 {% endblock content %}

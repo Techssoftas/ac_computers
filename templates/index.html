@@ -17,7 +17,7 @@
                                                     <span class="banner-subtitle wow fadeInUp" data-wow-delay="0.1s">Welcome To Tecxtronics</span>
                                                     <h2 class="banner-title wow fadeInUp" data-wow-delay="0.3s">We bring your devices back to life.</h2>
                                                     <div class="banner-button mt-35 wow fadeInUp" data-wow-delay="0.5s">
-                                                        <a class="about_content-link banner-btn" href="about.html">
+                                                        <a class="about_content-link banner-btn" href="{% url 'about' %}">
                                                             <span>Read More</span><i class="fal fa-long-arrow-right"></i>
                                                         </a>
                                                     </div>
@@ -32,7 +32,7 @@
                                                     <span class="banner-subtitle wow fadeInUp" data-wow-delay="0.1s">Welcome To Tecxtronics</span>
                                                     <h2 class="banner-title wow fadeInUp" data-wow-delay="0.3s">Your digital life, back on track.</h2>
                                                     <div class="banner-button mt-35 wow fadeInUp" data-wow-delay="0.5s">
-                                                        <a class="about_content-link banner-btn" href="about.html">
+                                                        <a class="about_content-link banner-btn" href="{% url 'about' %}">
                                                             <span>Read More</span><i class="fal fa-long-arrow-right"></i>
                                                         </a>
                                                     </div>
@@ -47,7 +47,7 @@
                                                     <span class="banner-subtitle wow fadeInUp" data-wow-delay="0.1s">Welcome To Tecxtronics</span>
                                                     <h2 class="banner-title wow fadeInUp" data-wow-delay="0.3s">Smart solutions for every device.</h2>
                                                     <div class="banner-button mt-35 wow fadeInUp" data-wow-delay="0.5s">
-                                                        <a class="about_content-link banner-btn" href="about.html">
+                                                        <a class="about_content-link banner-btn" href="{% url 'about' %}">
                                                             <span>Read More</span><i class="fal fa-long-arrow-right"></i>
                                                         </a>
                                                     </div>
@@ -510,7 +510,7 @@
 
             <!-- contact area start -->
             <section>
-                <div class="contact-area pt-110 pb-120">
+                <div class="contact-area pt-30 pb-120">
                     <div class="container">
                         <div class="row">
                             <div class="col-12">
@@ -522,7 +522,7 @@
                         </div>
                         <div class="row">
                              <div class="col-12  col-lg-6">
-                               <img class="w-100" src="{% static 'img/service/1.jpg'%}" alt="Image Not Found">   
+                               <img class="w-100" src="{% static 'img/service/service1.jpg'%}" alt="Image Not Found">   
                            </div>
                             <div class="col-12 col-lg-6">
                                 
@@ -572,7 +572,7 @@
                                     </div>
                                 </div>
                                 <div class="contact-form wow fadeInUp" data-wow-delay="0.5s">
-                                    <form action="#">
+                                    <form action="#" class="contact-form">
                                         <div class="row">
                                             <div class="col-xl-6 col-lg-6 col-md-6">
                                                 <input type="text" placeholder="Your Name">
@@ -600,9 +600,8 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> 
             <!-- contact area end -->
-            
 
         </main>
 
