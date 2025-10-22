@@ -38,7 +38,7 @@
                                 <div class="blog-post mb-40 wow" data-wow-delay="0.3s" data-aos="fade-down" data-aos-delay="100">
                                     
                                     <div class="blog-post-img w_img">
-                                        <a href="blog-details.html"><img src="{% static 'img/blog/1.jpg'%}" alt="Not Found"></a>
+                                        <a href="{%  url 'services' %}"><img src="{% static 'img/blog/1.jpg'%}" alt="Not Found"></a>
                                         <div class="blog-post-category">
                                             <span>Services</span>
                                         </div>
@@ -70,7 +70,7 @@
                                 <div class="blog-post mb-40 wow " data-wow-delay="0.5s" data-aos="fade-down" data-aos-delay="200">
                                    
                                     <div class="blog-post-img w_img">
-                                        <a href="blog-details.html"><img src="{% static 'img/service/services2.jpg'%}" alt="Not Found"></a>
+                                        <a href="{% url 'services' %}"><img src="{% static 'img/service/services2.jpg'%}" alt="Not Found"></a>
                                         <div class="blog-post-category">
                                             <span>Services</span>
                                         </div>
@@ -102,7 +102,7 @@
                                 <div class="blog-post mb-40 wow " data-wow-delay="0.7s" data-aos="fade-down" data-aos-delay="300">
                                    
                                     <div class="blog-post-img w_img">
-                                        <a href="blog-details.html"><img src="{% static 'img/service/services4.jpg'%}" alt="Not Found"></a>
+                                        <a href="{% url 'services' %}"><img src="{% static 'img/service/services4.jpg'%}" alt="Not Found"></a>
                                         <div class="blog-post-category">
                                             <span>Services</span>
                                         </div>
@@ -160,7 +160,7 @@
                                         <i class="fal fa-cctv"></i>
                                     </div>
                                     <div class="service-content">
-                                        <h3 class="service-content-title"><a href="service-details.html">CCTV Camera Installation</a></h3>
+                                        <h3 class="service-content-title"><a href="{% url 'services' %}">CCTV Camera Installation</a></h3>
                                         <p>Professional setup of CCTV cameras for homes and offices, ensuring full coverage and security.</p>
                                     </div>
                                 </div>
@@ -172,7 +172,7 @@
                                         <i class="fal fa-hdd"></i>
                                     </div>
                                     <div class="service-content">
-                                        <h3 class="service-content-title"><a href="service-details.html">DVR/NVR Configuration</a></h3>
+                                        <h3 class="service-content-title"><a href="{% url 'services' %}">DVR/NVR Configuration</a></h3>
                                         <p>We configure DVR and NVR systems for seamless recording and secure storage of your footage. </p>
                                     </div>
                                 </div>
@@ -184,7 +184,7 @@
                                         <i class="fal fa-desktop"></i>
                                     </div>
                                     <div class="service-content">
-                                        <h3 class="service-content-title"><a href="service-details.html">Remote CCTV Monitoring</a></h3>
+                                        <h3 class="service-content-title"><a href="{% url 'services' %}">Remote CCTV Monitoring</a></h3>
                                         <p>Access live CCTV footage from mobile or web devices anytime, anywhere, and monitor your property in real time for peace of mind.</p>
                                     </div>
                                 </div>
@@ -196,7 +196,7 @@
                                         <i class="fal fa-tools"></i>
                                     </div>
                                     <div class="service-content">
-                                        <h3 class="service-content-title"><a href="service-details.html">Hardware Repair</a></h3>
+                                        <h3 class="service-content-title"><a href="{% url 'services' %}">Hardware Repair</a></h3>
                                         <p>Repair screens, keyboards, and other components quickly, getting your devices back in working order with minimal downtime.</p>
                                     </div>
                                 </div>
@@ -208,7 +208,7 @@
                                         <i class="fal fa-laptop-code"></i>
                                     </div>
                                     <div class="service-content">
-                                        <h3 class="service-content-title"><a href="service-details.html">Software Troubleshooting</a></h3>
+                                        <h3 class="service-content-title"><a href="{% url 'services' %}">Software Troubleshooting</a></h3>
                                         <p>Fix operating system issues, remove viruses, and resolve software problems quickly to keep your devices running smoothly and efficiently.</p>
                                     </div>
                                 </div>
@@ -220,7 +220,7 @@
                                         <i class="fal fa-tachometer-alt"></i>
                                     </div>
                                     <div class="service-content">
-                                        <h3 class="service-content-title"><a href="service-details.html">System Performance Optimization</a></h3>
+                                        <h3 class="service-content-title"><a href="{% url 'services' %}">System Performance Optimization</a></h3>
                                         <p>Speed up computers and enhance overall performance, ensuring smooth and efficient operation for all your tasks.</p>
                                     </div>
                                 </div>
@@ -232,7 +232,7 @@
                                         <i class="fal fa-bolt"></i>
                                     </div>
                                     <div class="service-content">
-                                        <h3 class="service-content-title"><a href="service-details.html">UPS Installation & Maintenance</a></h3>
+                                        <h3 class="service-content-title"><a href="s{% url 'services' %}">UPS Installation & Maintenance</a></h3>
                                         <p>Install and maintain UPS systems to protect your equipment from power interruptions and ensure smooth operation.</p>
                                     </div>
                                 </div>
@@ -244,7 +244,7 @@
                                         <i class="fal fa-battery-full"></i>
                                     </div>
                                     <div class="service-content">
-                                        <h3 class="service-content-title"><a href="service-details.html">Battery Replacement Services</a></h3>
+                                        <h3 class="service-content-title"><a href="{% url 'services' %}">Battery Replacement Services</a></h3>
                                         <p>Replace and maintain batteries for UPS and backup systems, ensuring reliable performance and uninterrupted power for your equipment.</p>
                                     </div>
                                 </div>
@@ -256,7 +256,7 @@
                                         <i class="fal fa-shield-alt"></i>
                                     </div>
                                     <div class="service-content">
-                                        <h3 class="service-content-title"><a href="service-details.html">Power Surge Protection</a></h3>
+                                        <h3 class="service-content-title"><a href="{% url 'services' %}">Power Surge Protection</a></h3>
                                         <p>Protect your devices and electronics from voltage fluctuations and power surges for safe and reliable operation.</p>
                                     </div>
                                 </div>
@@ -268,7 +268,7 @@
                                         <i class="fal fa-robot"></i>
                                     </div>
                                     <div class="service-content">
-                                        <h3 class="service-content-title"><a href="service-details.html">Smart Camera & Automation Setup</a></h3>
+                                        <h3 class="service-content-title"><a href="{% url 'services' %}">Smart Camera & Automation Setup</a></h3>
                                         <p>Setup motion detection, alerts, and automated CCTV surveillance for smarter security.</p>
                                     </div>
                                 </div>
@@ -280,7 +280,7 @@
                                         <i class="fal fa-database"></i>
                                     </div>
                                     <div class="service-content">
-                                        <h3 class="service-content-title"><a href="service-details.html">Data Recovery & Backup Solutions</a></h3>
+                                        <h3 class="service-content-title"><a href="{% url 'services' %}">Data Recovery & Backup Solutions</a></h3>
                                         <p>Recover lost data and set up backup systems to prevent future data loss, keeping your important information safe and accessible.</p>
                                     </div>
                                 </div>

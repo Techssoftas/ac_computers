@@ -184,6 +184,9 @@
   border-radius: 10px;
 }
 
+.prod-img{
+  height: 400px;
+}
 /* Services Readmore */
 .blog-post-info1 {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
@@ -237,6 +240,10 @@
   .top {
     margin-top: 10px;
   }
+
+  .prod-img{
+  height: 250px;
+}
 
 }
 
