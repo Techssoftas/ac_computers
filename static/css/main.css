@@ -8983,10 +8983,3 @@ svg.web-design circle {
     margin-top: 30px;
   }
 }
-
-@media (max-width: 768px) {
-  .bg-default {
-    background-size: contain;  /* show full image on mobile */
-    
-  }
-}

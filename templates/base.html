@@ -208,10 +208,10 @@
                                         <h3 class="footer-widget-title">Quick Links</h3>
                                         <div class="footer-widget-menu">
                                             <ul>
-                                                <li><a href="about.html">About</a></li>
-                                                <li><a href="blog.html">Products</a></li>
-                                                <li><a href="about.html">Services </a></li>
-                                                 <li><a href="about.html">Contact </a></li>
+                                                <li><a href="{% url 'about' %}">About</a></li>
+                                                <li><a href="{% url 'products' %}">Products</a></li>
+                                                <li><a href="{% url 'services' %}">Services </a></li>
+                                                 <li><a href="{% url 'contact' %}">Contact </a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -221,10 +221,10 @@
                                         <h3 class="footer-widget-title">Services</h3>
                                          <div class="footer-widget-menu">
                                             <ul>
-                                                <li><a href="about.html">Desktop</a></li>
-                                                <li><a href="blog.html">Laptop</a></li>
-                                                 <li><a href="blog.html">CCTV</a></li>
-                                                <li><a href="service.html">UPS Battery</a></li>
+                                                <li><a href="{% url 'services' %}">Desktop</a></li>
+                                                <li><a href="{% url 'services' %}">Laptop</a></li>
+                                                 <li><a href="{% url 'services' %}">CCTV</a></li>
+                                                <li><a href="{% url 'services' %}">UPS Battery</a></li>
                                             </ul>
                                         </div>
                                     </div>
